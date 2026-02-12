@@ -74,7 +74,7 @@ export const content = {
           role: "代表取締役CEO",
           bio: "ゴールドマン・サックス証券で投資銀行業務に従事後、The Estee Lauder Companies NY本社にてFinance & Strategyチームのディレクター職に就任し、同社の成長戦略、再生事業に参画。直近ではオンライン診療事業のeLife株式会社にCEOとして参画して組織の黒字化・成長拡大を牽引。新規事業の創出から成長戦略の立案、オペレーションの確立まで幅広い実績を持つ。",
           education: "東京大学経済学部卒、コロンビア大学経営大学院修了",
-          image: "/images/yamada-yudai.jpg",
+          image: "/images/yamada-yuta.png",
           linkedin: "https://www.linkedin.com/in/yuta-yamada-659941129",
         },
         {
@@ -82,7 +82,7 @@ export const content = {
           role: "取締役",
           bio: "WAY Equity Partners創業者。ドイツビアレストラン「Schmatz」を日本で共同創業し、40店舗・800名超の規模に成長。2023年よりソフトウェア企業のバイ&ビルドを推進。",
           education: "",
-          image: "/images/christopher-ax.jpg",
+          image: "/images/ax-chris.png",
           linkedin: "https://www.linkedin.com/in/christopher-ax-65ba8451/",
         },
       ],
@@ -257,7 +257,7 @@ export const content = {
           bio: "After investment banking at Goldman Sachs, served as Director of Finance & Strategy at The Estee Lauder Companies NY headquarters, contributing to growth strategy and business transformation. Most recently joined eLife Inc. as CEO, leading the organization to profitability and growth. Extensive experience spanning new business creation, growth strategy, and operational excellence.",
           education:
             "B.A. Economics, University of Tokyo; MBA, Columbia Business School",
-          image: "/images/yamada-yudai.jpg",
+          image: "/images/yamada-yuta.png",
           linkedin: "https://www.linkedin.com/in/yuta-yamada-659941129",
         },
         {
@@ -265,7 +265,7 @@ export const content = {
           role: "Director",
           bio: "Founder of WAY Equity Partners. Co-founded German beer restaurant \"Schmatz\" in Japan, growing it to 40+ locations and 800+ employees. Since 2023, driving buy-and-build strategy in the software sector.",
           education: "",
-          image: "/images/christopher-ax.jpg",
+          image: "/images/ax-chris.png",
           linkedin: "https://www.linkedin.com/in/christopher-ax-65ba8451/",
         },
       ],

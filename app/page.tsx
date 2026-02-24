@@ -25,7 +25,6 @@ export default function Page() {
     <main>
       <Navbar locale={locale} onLocaleChange={setLocale} />
       <HeroSection locale={locale} />
-      <AboutSection locale={locale} />
       <MissionSection locale={locale} />
       <VisionSection locale={locale} />
       <LeadershipSection locale={locale} />
@@ -36,6 +35,7 @@ export default function Page() {
       <PartnershipSection locale={locale} />
       <MarketSection locale={locale} />
       <WayGroupSection locale={locale} />
+      <AboutSection locale={locale} />
       <ContactSection locale={locale} />
       <Footer locale={locale} />
     </main>

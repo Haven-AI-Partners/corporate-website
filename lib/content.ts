@@ -3,17 +3,13 @@ export type Locale = "ja" | "en"
 export const content = {
   ja: {
     nav: {
-      about: "会社概要",
-      mission: "ミッション",
-      vision: "ビジョン",
       leadership: "経営陣",
-      challenges: "業界課題",
-      approach: "解決アプローチ",
-      features: "特徴",
-      strengths: "強み",
+      philosophy: "理念",
+      business: "事業",
       partnership: "パートナーシップ",
       market: "市場概要",
       wayGroup: "WAYグループ",
+      about: "会社概要",
       contact: "お問い合わせ",
     },
     hero: {
@@ -412,17 +408,13 @@ export const content = {
   },
   en: {
     nav: {
-      about: "About",
-      mission: "Mission",
-      vision: "Vision",
       leadership: "Leadership",
-      challenges: "Challenges",
-      approach: "Approach",
-      features: "Features",
-      strengths: "Strengths",
+      philosophy: "Philosophy",
+      business: "Business",
       partnership: "Partnership",
       market: "Market",
       wayGroup: "WAY Group",
+      about: "About",
       contact: "Contact",
     },
     hero: {

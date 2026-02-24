@@ -22,17 +22,13 @@ export function Navbar({ locale, onLocaleChange }: NavbarProps) {
   }, [])
 
   const navItems = [
-    { href: "#about", label: t.about },
-    { href: "#mission", label: t.mission },
-    { href: "#vision", label: t.vision },
     { href: "#leadership", label: t.leadership },
-    { href: "#challenges", label: t.challenges },
-    { href: "#approach", label: t.approach },
-    { href: "#features", label: t.features },
-    { href: "#strengths", label: t.strengths },
+    { href: "#mission", label: t.philosophy },
+    { href: "#challenges", label: t.business },
     { href: "#partnership", label: t.partnership },
     { href: "#market", label: t.market },
     { href: "#wayGroup", label: t.wayGroup },
+    { href: "#about", label: t.about },
     { href: "#contact", label: t.contact },
   ]
 

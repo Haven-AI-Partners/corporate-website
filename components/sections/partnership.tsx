@@ -1,6 +1,6 @@
 "use client"
 
-import { Blocks } from "lucide-react"
+import { Blocks, ArrowRight } from "lucide-react"
 import type { Locale } from "@/lib/content"
 import { content } from "@/lib/content"
 
@@ -38,6 +38,39 @@ export function PartnershipSection({ locale }: { locale: Locale }) {
             <p className="text-pretty text-center text-lg leading-relaxed text-muted-foreground">
               {t.description}
             </p>
+          </div>
+        </div>
+
+        {/* 3-Step Implementation Model */}
+        <div className="mx-auto mt-12 max-w-4xl">
+          <div className="grid gap-6 md:grid-cols-3">
+            {t.steps.map((step, i) => (
+              <div key={step.number} className="relative">
+                <div className="rounded-xl border border-border bg-card p-6 shadow-sm h-full">
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="text-3xl font-bold text-primary/20">
+                      {step.number}
+                    </span>
+                    <div>
+                      <h3 className="text-base font-semibold text-foreground">
+                        {step.title}
+                      </h3>
+                      <p className="text-xs text-muted-foreground">
+                        {step.subtitle}
+                      </p>
+                    </div>
+                  </div>
+                  <p className="text-sm leading-relaxed text-muted-foreground">
+                    {step.description}
+                  </p>
+                </div>
+                {i < t.steps.length - 1 && (
+                  <div className="hidden md:flex absolute top-1/2 -right-3 -translate-y-1/2 z-10">
+                    <ArrowRight className="h-5 w-5 text-primary/40" />
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </div>

@@ -8,10 +8,13 @@ import { AboutSection } from "@/components/sections/about"
 import { MissionSection } from "@/components/sections/mission"
 import { VisionSection } from "@/components/sections/vision"
 import { LeadershipSection } from "@/components/sections/leadership"
+import { ChallengesSection } from "@/components/sections/challenges"
+import { ApproachSection } from "@/components/sections/approach"
 import { FeaturesSection } from "@/components/sections/features"
 import { StrengthsSection } from "@/components/sections/strengths"
 import { PartnershipSection } from "@/components/sections/partnership"
 import { MarketSection } from "@/components/sections/market"
+import { WayGroupSection } from "@/components/sections/way-group"
 import { ContactSection } from "@/components/sections/contact"
 import { Footer } from "@/components/footer"
 
@@ -26,10 +29,13 @@ export default function Page() {
       <MissionSection locale={locale} />
       <VisionSection locale={locale} />
       <LeadershipSection locale={locale} />
+      <ChallengesSection locale={locale} />
+      <ApproachSection locale={locale} />
       <FeaturesSection locale={locale} />
       <StrengthsSection locale={locale} />
       <PartnershipSection locale={locale} />
       <MarketSection locale={locale} />
+      <WayGroupSection locale={locale} />
       <ContactSection locale={locale} />
       <Footer locale={locale} />
     </main>

@@ -26,16 +26,28 @@ export function StrengthsSection({ locale }: { locale: Locale }) {
           {/* Haven card */}
           <div className="rounded-xl border-2 border-primary/40 bg-card p-8 shadow-sm">
             <h3 className="text-xl font-bold text-primary">{t.haven.title}</h3>
-            <ul className="mt-6 flex flex-col gap-4" role="list">
-              {t.haven.items.map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <div className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-primary/10">
-                    <Check className="h-3 w-3 text-primary" />
-                  </div>
-                  <span className="text-sm text-foreground">{item}</span>
-                </li>
+            <p className="mt-1 text-sm font-medium text-primary/70">
+              {t.haven.subtitle}
+            </p>
+            <div className="mt-6 flex flex-col gap-6">
+              {t.haven.categories.map((category) => (
+                <div key={category.label}>
+                  <p className="text-xs font-semibold uppercase tracking-wider text-foreground/60 mb-3">
+                    {category.label}
+                  </p>
+                  <ul className="flex flex-col gap-3" role="list">
+                    {category.items.map((item) => (
+                      <li key={item} className="flex items-start gap-3">
+                        <div className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-primary/10">
+                          <Check className="h-3 w-3 text-primary" />
+                        </div>
+                        <span className="text-sm text-foreground">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
 
           {/* Fund card */}
@@ -43,16 +55,30 @@ export function StrengthsSection({ locale }: { locale: Locale }) {
             <h3 className="text-xl font-bold text-muted-foreground">
               {t.fund.title}
             </h3>
-            <ul className="mt-6 flex flex-col gap-4" role="list">
-              {t.fund.items.map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <div className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-muted">
-                    <X className="h-3 w-3 text-muted-foreground" />
-                  </div>
-                  <span className="text-sm text-muted-foreground">{item}</span>
-                </li>
+            <p className="mt-1 text-sm font-medium text-muted-foreground/70">
+              {t.fund.subtitle}
+            </p>
+            <div className="mt-6 flex flex-col gap-6">
+              {t.fund.categories.map((category) => (
+                <div key={category.label}>
+                  <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground/60 mb-3">
+                    {category.label}
+                  </p>
+                  <ul className="flex flex-col gap-3" role="list">
+                    {category.items.map((item) => (
+                      <li key={item} className="flex items-start gap-3">
+                        <div className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-muted">
+                          <X className="h-3 w-3 text-muted-foreground" />
+                        </div>
+                        <span className="text-sm text-muted-foreground">
+                          {item}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
       </div>

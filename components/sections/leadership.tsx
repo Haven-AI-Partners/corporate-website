@@ -29,7 +29,7 @@ export function LeadershipSection({ locale }: { locale: Locale }) {
               key={member.name}
               className="rounded-xl border border-border bg-card p-8 shadow-sm"
             >
-              <div className="flex items-start gap-5 mb-6">
+              <div className="flex items-start gap-5 mb-4">
                 <div className="relative h-20 w-20 flex-shrink-0 overflow-hidden rounded-full border-2 border-primary/20">
                   <Image
                     src={member.image}
@@ -59,6 +59,9 @@ export function LeadershipSection({ locale }: { locale: Locale }) {
                   </p>
                 </div>
               </div>
+              <p className="text-pretty text-xs leading-relaxed text-muted-foreground/80 mb-6">
+                {member.memberSubtitle}
+              </p>
               <p className="text-pretty text-sm leading-relaxed text-muted-foreground">
                 {member.bio}
               </p>
@@ -66,6 +69,23 @@ export function LeadershipSection({ locale }: { locale: Locale }) {
                 <p className="mt-4 text-sm font-medium text-foreground/80">
                   {member.education}
                 </p>
+              )}
+              {member.skills && member.skills.length > 0 && (
+                <div className="mt-6 flex flex-wrap gap-2">
+                  {member.skills.map((skill) => (
+                    <div
+                      key={skill.title}
+                      className="rounded-lg bg-primary/5 border border-primary/10 px-3 py-2"
+                    >
+                      <p className="text-xs font-semibold text-primary">
+                        {skill.title}
+                      </p>
+                      <p className="text-xs text-muted-foreground mt-0.5">
+                        {skill.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               )}
             </div>
           ))}

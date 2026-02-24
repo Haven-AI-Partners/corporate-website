@@ -14,7 +14,6 @@ import { FeaturesSection } from "@/components/sections/features"
 import { StrengthsSection } from "@/components/sections/strengths"
 import { PartnershipSection } from "@/components/sections/partnership"
 import { MarketSection } from "@/components/sections/market"
-import { WayGroupSection } from "@/components/sections/way-group"
 import { ContactSection } from "@/components/sections/contact"
 import { Footer } from "@/components/footer"
 
@@ -34,7 +33,6 @@ export default function Page() {
       <StrengthsSection locale={locale} />
       <PartnershipSection locale={locale} />
       <MarketSection locale={locale} />
-      <WayGroupSection locale={locale} />
       <AboutSection locale={locale} />
       <ContactSection locale={locale} />
       <Footer locale={locale} />

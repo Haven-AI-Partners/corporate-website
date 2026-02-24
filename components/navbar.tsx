@@ -27,7 +27,6 @@ export function Navbar({ locale, onLocaleChange }: NavbarProps) {
     { href: "#challenges", label: t.business },
     { href: "#partnership", label: t.partnership },
     { href: "#market", label: t.market },
-    { href: "#wayGroup", label: t.wayGroup },
     { href: "#about", label: t.about },
     { href: "#contact", label: t.contact },
   ]

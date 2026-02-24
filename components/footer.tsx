@@ -23,10 +23,12 @@ export function Footer({ locale }: { locale: Locale }) {
           <nav aria-label="Footer navigation">
             <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
               {[
-                { href: "#about", label: nav.about },
-                { href: "#mission", label: nav.mission },
+                { href: "#mission", label: nav.philosophy },
                 { href: "#leadership", label: nav.leadership },
-                { href: "#features", label: nav.features },
+                { href: "#challenges", label: nav.business },
+                { href: "#partnership", label: nav.partnership },
+                { href: "#market", label: nav.market },
+                { href: "#about", label: nav.about },
                 { href: "#contact", label: nav.contact },
               ].map((item) => (
                 <li key={item.href}>

@@ -3,8 +3,8 @@ export type Locale = "ja" | "en"
 export const content = {
   ja: {
     nav: {
-      leadership: "経営陣",
       philosophy: "理念",
+      leadership: "経営陣",
       business: "事業",
       partnership: "パートナーシップ",
       market: "市場概要",
@@ -408,8 +408,8 @@ export const content = {
   },
   en: {
     nav: {
-      leadership: "Leadership",
       philosophy: "Philosophy",
+      leadership: "Leadership",
       business: "Business",
       partnership: "Partnership",
       market: "Market",

@@ -15,14 +15,10 @@ export function MissionSection({ locale }: { locale: Locale }) {
         <h2 className="mt-4 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
           {t.subtitle}
         </h2>
-        {t.title && (
-          <>
-            <div className="mx-auto mt-8 h-px w-16 bg-primary" />
-            <p className="mt-8 text-pretty text-lg text-muted-foreground">
-              {t.title}
-            </p>
-          </>
-        )}
+        <div className="mx-auto mt-8 h-px w-16 bg-primary" />
+        <p className="mt-8 text-pretty text-lg text-muted-foreground">
+          {t.title}
+        </p>
       </div>
     </section>
   )

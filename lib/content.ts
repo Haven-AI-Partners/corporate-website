@@ -39,26 +39,27 @@ export const content = {
     },
     mission: {
       label: "ミッション",
-      title: "",
-      subtitle:
+      title:
         "知識と時間の民主化が進む今、私たちは、人の可能性を解き放つ経営へと進化する必要があります。",
+      subtitle:
+        "Empower every Japanese business to thrive in the age of AI",
     },
     vision: {
       label: "ビジョン",
-      title: "人々の生き方・働き方が再定義されるこの転換点で、日本のITサービス企業が持続的な成長機会を生み続けるエコシステムを構築します。",
-      description: "",
+      title: "To design Japan's industrial future by unlocking the creativity and productivity within every person",
+      description: "人々の生き方・働き方が再定義されるこの転換点で、日本のITサービス企業が持続的な成長機会を生み続けるエコシステムを構築します。",
       pillars: [
         {
           title: "Growth（成長）",
-          description: "デジタル変革と生産性向上の加速",
+          description: "AIとデジタルの力で、企業の成長曲線を再定義する",
         },
         {
           title: "Creativity（創造）",
-          description: "人の創造性を中心に据えた、持続可能な社会へ",
+          description: "テクノロジーによって、人の創造性を最大化する社会へ",
         },
         {
           title: "Equality（平等）",
-          description: "すべての人が先端技術へアクセスできる社会を実現",
+          description: "誰もがAIを活用できる環境を整える",
         },
       ],
     },
@@ -70,17 +71,17 @@ export const content = {
       members: [
         {
           name: "Yuta Yamada",
-          role: "代表取締役CEO",
+          role: "創業者兼Chief Executive Officer",
           memberSubtitle:
             "投資銀行 ×グローバル企業 ×ヘルスケアで磨いた成長と再生のプロフェッショナル",
-          bio: "ゴールドマン・サックス証券で投資銀行業務に従事後、The Estée Lauder Companies NY本社にてFinance & Strategyチームのディレクター職に就任し、同社の成長戦略、再生事業に参画。直近ではオンライン診療事業のeLife株式会社にCEOとして参画して組織の黒字化・成長拡大を牽引。新規事業の創出から成長戦略の立案、オペレーションの確立まで幅広い実績を持つ。",
+          bio: "ゴールドマン・サックス証券で投資銀行業務に従事後、The Estée Lauder Companies NY本社にてFinance & Strategyチームのディレクター職に就任し、同社の成長戦略、再生事業に参画。その後はオンライン診療事業のeLife株式会社にCEOとして参画して組織の黒字化・成長拡大を牽引。新規事業の創出から成長戦略の立案、オペレーションの確立まで幅広い実績を持つ。",
           education: "東京大学経済学部卒、コロンビア大学経営大学院修了",
           image: "/images/yamada-yuta.png",
           linkedin: "https://www.linkedin.com/in/yuta-yamada-659941129",
           skills: [
             {
               title: "事業再生・黒字化",
-              description: "eLife CEOとして組織の成長と黒字化を牽引",
+              description: "eLife CEOとして組織成長のオペレーションを牽引",
             },
             {
               title: "グローバル戦略",
@@ -120,50 +121,50 @@ export const content = {
     },
     challenges: {
       label: "業界課題",
-      title: "ITサービス業界が直面する構造的な課題",
+      title: "ITサービス業界が直面する構造転換",
       subtitle:
-        "「100社あれば100通りのやり方がある」日本企業特有の現場主導型オペレーションは強みである一方、画一的なパッケージ導入を拒み、結果としてITサービスは「構造的な追い風」と「技術的な障壁」の板挟みになっています",
+        "日本のITサービス業界は、いま構造的な転換点にあります。現場主導で磨かれてきた独自オペレーションは大きな強みである一方、標準化や再現性の確立を難しくし、技術進化との摩擦を生んでいます。「100社あれば100通りのやり方がある」という多様性は、日本企業の競争力の源泉です。しかし同時に、それが新しいテクノロジー導入の難易度を高める要因にもなっています。",
       items: [
         {
           title: "人材不足",
           subtitle: "加速する労働人口減少",
           description:
-            "2030年までに15%減と予測され人を補うための技術導入が急務",
+            "2030年までに労働人口は約15%減少すると予測されています。人材確保に依存する成長モデルは限界を迎えつつあり、テクノロジーによる生産性向上が不可欠です。",
         },
         {
           title: "生産性向上への遅れ",
-          subtitle: "デジタル化の遅れによる効率性の停滞",
+          subtitle: "デジタル化の遅れによる効率停滞",
           description:
-            "クラウド/SaaS導入率は米国比で10年分の遅れをとっており巨大な「伸びしろ」が存在",
+            "クラウドやSaaSの導入率は米国と比較して大きな差があり、依然として業務の属人化や手作業が残っています。一方で、これは大きな改善余地が存在することも意味します。",
         },
         {
           title: "後継者不在",
-          subtitle: "経営者の高齢化（平均63歳）",
+          subtitle: "経営者の高齢化と承継課題",
           description:
-            "後継者不在率は53.9%に達し、黒字でも廃業の危機にある企業が多数",
+            "経営者の平均年齢は63歳。後継者不在率は53.9%に達し、黒字企業であっても廃業の可能性を抱える企業が増えています。持続的な成長に向けたモデルの再設計が求められています。",
         },
         {
           title: "AI活用の断絶",
-          subtitle: "汎用ツールでは解決できない「ラストワンマイル」",
+          subtitle: "「ラストワンマイル」の壁",
           description:
-            "現場の暗黙知や独自フローが壁となり最新技術の恩恵が現場に届いていない",
+            "AIや汎用ツールは急速に進化しています。しかし、現場の暗黙知や独自フローとの接続は容易ではなく、最新技術が十分に活用されていないケースも少なくありません。テクノロジーと現場の間には、見えない断絶が存在しています。",
         },
       ],
       barrierTagline:
-        "Haven AI Partnersは、クライアント一社一社の固有の課題に寄り添い、最適なソリューションを提供します",
+        "Haven AI Partnersは、各企業の固有性を尊重しながら、AIを持続的な成長へと結びつくかたちで実装します。",
       barrierLabel: "AI導入の障壁",
       barriers: [
         {
           title: "データの特異性と断絶",
-          description: "標準化されていない現場のリアルデータ",
+          description: "標準化されていない現場データや部門間の分断が、活用の難易度を高めています。",
         },
         {
           title: "独自のビジネスロジック",
-          description: "歴史的経緯に基づく複雑な例外処理",
+          description: "長年の歴史の中で積み重ねられた例外処理や慣習が、システム刷新のハードルとなっています。",
         },
         {
           title: "セキュリティの壁",
-          description: "機密保持や既存認証基盤との連携要件",
+          description: "機密保持や既存認証基盤との整合性確保が不可欠であり、慎重な設計が求められます。",
         },
       ],
     },
@@ -446,7 +447,7 @@ export const content = {
     mission: {
       label: "Mission",
       title:
-        "In an era of democratized knowledge and time, we must evolve toward a management that unleashes human potential.",
+        "知識と時間の民主化が進む今、私たちは、人の可能性を解き放つ経営へと進化する必要があります。",
       subtitle:
         "Empower every Japanese business to thrive in the age of AI",
     },
@@ -455,7 +456,7 @@ export const content = {
       title:
         "To design Japan's industrial future by unlocking the creativity and productivity within every person",
       description:
-        "At this turning point where the way people live and work is being redefined, we are building an ecosystem where Japan's IT service companies continuously generate sustainable growth opportunities.",
+        "人々の生き方・働き方が再定義されるこの転換点で、日本のITサービス企業が持続的な成長機会を生み続けるエコシステムを構築します。",
       pillars: [
         {
           title: "Growth",

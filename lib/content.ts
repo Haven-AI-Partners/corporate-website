@@ -35,7 +35,7 @@ export const content = {
         },
       ],
       description:
-        "MSP（マネージドサービスプロバイダー）、リセラー企業、SIersをはじめとする、信頼ある国内のITサービス企業を戦略的買収・統合により仲間として迎え入れ、グループインした企業の経営基盤の強化に加え、国内外のAIサービスを日本企業の顧客へ届ける架け橋の役割も担いながらAI時代の成長を牽引するテクノロジー企業グループを実現します。",
+        "Haven AI Partnersは、MSP（マネージドサービスプロバイダー）、リセラー企業、SIerをはじめとする信頼ある国内ITサービス企業を、戦略的にグループへ迎え入れます。各社の独自性を尊重しながら経営基盤を強化するとともに、国内外のAIサービスを日本企業へ届ける架け橋となります。そして、AI時代の成長を牽引するテクノロジー企業グループを構築します。",
     },
     mission: {
       label: "ミッション",
@@ -172,146 +172,64 @@ export const content = {
       label: "解決アプローチ",
       title: "Havenの解決アプローチ",
       subtitle:
-        "それぞれの強みを活かしながら、4つの柱で更なる成長と価値創造を支援します。",
+        "それぞれの強みを活かしながら、長期的な視点で4つの柱を通じて持続的な成長と価値創造を支援します。",
       pillars: [
         {
           number: 1,
           title: "人材・組織",
-          subtitle: "コミュニティ主導の採用エコシステム",
+          subtitle: "コミュニティを基盤とした採用と組織強化",
           description:
-            "トップタレントに選ばれ続ける組織へ WAYグループのタレントコミュニティを活用した採用力の強化に加え、エンジニアのキャリア開発支援とエンゲージメント向上を最優先事項として推進します。",
+            "トップタレントに選ばれ続ける組織へ。独自のタレントコミュニティとグローバルなネットワークを活用し、採用力を高めるとともに、エンジニアのキャリア開発とエンゲージメント向上を重視します。",
         },
         {
           number: 2,
           title: "AI展開",
-          subtitle: "実証から実装へ、段階的な価値提供",
+          subtitle: "実証から実装へ、段階的に価値を創出",
           description:
-            "社内でのAI活用による効率化から始め、蓄積した知見を基に、既存・新規顧客向けのAI/DXオファリングへと展開します。",
+            "まずは社内業務へのAI活用から着手し、蓄積した知見を基に、既存・新規顧客向けのAI/DXオファリングへと展開します。単なる提案にとどまらず、現場に根付く形での実装を重視します。",
         },
         {
           number: 3,
           title: "効率化・最適化",
-          subtitle: "コア価値を損なわない筋肉質な経営",
+          subtitle: "コア価値を守りながら、経営基盤を強化",
           description:
-            "既存事業の安定運用を前提としつつ、成長加速のためのリソース再配分・コスト構造の最適化を図ります。創出した余力は、AI技術開発や人材育成などの新規投資へ積極的に再配分します。",
+            "既存事業の安定運用を前提に、成長加速のためのリソース再配分・コスト構造の最適化を図ります。創出した余力は、AI技術開発や人材育成など将来への投資へ再配分します。短期的な効率化にとどまらない、持続的な企業価値向上を目指します。",
         },
         {
           number: 4,
           title: "プラットフォーム役割",
-          subtitle: "成長戦略の中核となるプラットフォームへ",
+          subtitle: "成長戦略の中核となる統合プラットフォームへ",
           description:
-            "連続的なM&Aを通じて新規顧客層と販路の拡大を図り、事業領域を拡張させながらサービスポートフォリオの拡大を推進。より大きな社会的インパクトの創出を目指します。",
+            "連続的なM&Aを通じて顧客基盤と事業領域を拡張し、サービスポートフォリオを強化します。各社の独自性を尊重しながら統合を進め、スケールメリットと専門性の両立を図ります。持続的なスケールと社会的インパクトの両立を目指します。",
         },
       ],
-    },
-    features: {
-      label: "Havenの特徴",
-      title:
-        "テクノロジーとオペレーションを融合させ、日本の中堅ITサービス企業の成長を加速",
-      subtitle:
-        "Haven AI Partnersはテクノロジーとオペレーションを融合させ、日本の中堅ITサービス企業の成長を加速させるAIネイティブプラットフォームを構築していきます。",
-      items: [
-        {
-          title: "資本提供に留まらない実行力ある支援",
-          description:
-            "資金提供に加え、営業強化・マーケティング・業務効率化・AI導入支援など現場主導のハンズオン型オペレーション支援を実施。従来型MSP・VAR・SI企業をAIと自動化を通じて変革。顧客との信頼関係や企業文化も大切にし、デジタル時代に適した形へ再構築します。",
-        },
-        {
-          title: "長期的かつ持続可能な成長基盤",
-          description:
-            "HavenはExit期限を持たない事業会社として運営。短期リターンではなく、長期的なパートナーシップと継続的イノベーションを追求。各社の独立性を尊重しながら、グループ全体のナレッジを共有。",
-        },
-      ],
-    },
-    strengths: {
-      label: "譲受企業としての強み",
-      title: "事業会社としての長期的な価値創造",
-      subtitle:
-        "弊社は投資リターンを主目的とした売却が必須なファンド形態とは異なり、事業会社として長期的かつ持続可能な価値創造を目指した経営スタイルを徹底します。",
-      haven: {
-        title: "Haven AI Partners",
-        subtitle: "Strategic Builder",
-        categories: [
-          {
-            label: "特徴・目的",
-            items: [
-              "事業会社として長期的な価値創造を実現",
-              "自社のバランスシートを活用した買収",
-              "投資先会社同士の協調が前提",
-            ],
-          },
-          {
-            label: "再譲渡（Exit）",
-            items: [
-              "強制的なExitなし",
-              "M&Aとテクノロジーを通じ複利成長を追求",
-            ],
-          },
-          {
-            label: "バリューアップ",
-            items: [
-              "各社の独立性を尊重しつつ、AIとデジタル変革による独自のバリューアップを実現",
-              "既存事業の支援と新規顧客の開拓の両輪で成長",
-            ],
-          },
-        ],
-      },
-      fund: {
-        title: "一般的な投資ファンド",
-        subtitle: "Financial Buyer",
-        categories: [
-          {
-            label: "特徴・目的",
-            items: [
-              "買収後3〜5年以内の売却が前提",
-              "投資先会社同士の連携はほぼなし（個別最適）",
-              "レバレッジ（LBO）を活用した金融手法",
-            ],
-          },
-          {
-            label: "再譲渡（Exit）",
-            items: [
-              "3〜5年以内に売却義務",
-              "小規模の場合1年未満の短期転売ケースも",
-            ],
-          },
-          {
-            label: "バリューアップ",
-            items: [
-              "IT・AI分野の専門性が限定的",
-              "外部コンサル委託のケースが多い（ハンズオフ）",
-              "コストカットによる利益捻出が中心",
-            ],
-          },
-        ],
-      },
     },
     partnership: {
       label: "戦略的パートナーシップ",
       title: "株式会社Recursiveとの戦略的パートナーシップ",
       description:
-        "Havenの現場実行力とRecursiveの技術力を融合し、日本全国の中堅・中小企業のAI活用を加速し、高品質かつ継続的な成果を創出します。",
+        "Haven AI Partnersは、2026年1月より株式会社Recursiveとの戦略的パートナーシップを開始しました。Havenの現場実装力とRecursiveの先端技術を融合し、日本全国の中堅・中小企業におけるAI活用を着実に推進します。構想から実装、運用まで一貫して支援し、継続的な成果創出を目指します。",
       steps: [
         {
           number: "01",
           title: "構想策定",
           subtitle: "Consulting",
           description:
-            "中堅・中小企業の現場課題を深く理解し、費用対効果の高いAI導入ロードマップを策定。",
+            "企業ごとの現場課題を丁寧に整理し、費用対効果と実行可能性を踏まえたAI導入ロードマップを策定します。",
         },
         {
           number: "02",
           title: "実装",
           subtitle: "Development",
           description:
-            "Recursiveの先端技術を活用し、各社のニーズに合わせたAIモデルの開発とシステム統合を実施。",
+            "Recursiveの先端技術を活用し、各社の業務特性に即したAIモデルの開発とシステム統合を行います。現場に根付く形での実装を重視します。",
         },
         {
           number: "03",
           title: "運用・定着",
           subtitle: "Operation",
           description:
-            "導入後の継続的なモニタリングとモデル改善を行い、現場での定着と成果創出をサポート。",
+            "導入後も継続的なモニタリングとモデル改善を行い、成果の可視化と現場への定着を支援します。単発導入にとどまらない、持続的な価値創出を目指します。",
         },
       ],
     },
@@ -442,7 +360,7 @@ export const content = {
         },
       ],
       description:
-        "We strategically acquire and integrate trusted domestic IT service companies, including MSPs, resellers, and SIers, strengthening their management foundations while serving as a bridge to deliver world-class AI services to Japanese enterprise customers, building a technology group that leads growth in the AI era.",
+        "Haven AI Partners strategically welcomes trusted domestic IT service companies — including MSPs, resellers, and SIers — into our group. While respecting each company's uniqueness and strengthening their management foundations, we serve as a bridge to deliver AI services from Japan and abroad to Japanese enterprises. Together, we are building a technology group that leads growth in the AI era.",
     },
     mission: {
       label: "Mission",
@@ -585,146 +503,64 @@ export const content = {
       label: "Our Approach",
       title: "Haven's Solution Approach",
       subtitle:
-        "Leveraging each company's strengths, we support further growth and value creation through four pillars.",
+        "Leveraging each company's strengths, we support sustainable growth and value creation through four pillars with a long-term perspective.",
       pillars: [
         {
           number: 1,
           title: "People & Organization",
-          subtitle: "Community-driven talent ecosystem",
+          subtitle: "Community-based recruitment and organizational strengthening",
           description:
-            "Building organizations that top talent chooses. Strengthening recruitment through WAY Group's talent community while prioritizing engineer career development and engagement.",
+            "Building organizations that top talent chooses. Leveraging our unique talent community and global network to strengthen recruitment while prioritizing engineer career development and engagement.",
         },
         {
           number: 2,
           title: "AI Deployment",
-          subtitle: "From proof of concept to implementation",
+          subtitle: "From proof of concept to implementation, creating value step by step",
           description:
-            "Starting with internal AI-driven efficiency gains, then expanding to AI/DX offerings for existing and new customers based on accumulated knowledge.",
+            "Starting with internal AI adoption, then expanding to AI/DX offerings for existing and new customers based on accumulated knowledge. We prioritize implementation that takes root on the ground, not just proposals.",
         },
         {
           number: 3,
           title: "Optimization",
-          subtitle: "Lean management without compromising core value",
+          subtitle: "Strengthening the management foundation while protecting core value",
           description:
-            "Optimizing resource allocation and cost structures while maintaining stable operations. Freed-up capacity is actively reinvested into AI development and talent cultivation.",
+            "Optimizing resource allocation and cost structures to accelerate growth while maintaining stable operations. Freed-up capacity is reinvested into future initiatives like AI development and talent cultivation. We aim for sustainable enterprise value enhancement, not just short-term efficiency.",
         },
         {
           number: 4,
           title: "Platform Role",
-          subtitle: "Becoming the core platform for growth strategy",
+          subtitle: "Becoming the integrated platform at the core of growth strategy",
           description:
-            "Expanding customer base and channels through continuous M&A, broadening service portfolios while pursuing greater social impact.",
+            "Expanding customer base and business domains through continuous M&A to strengthen service portfolios. We pursue integration that respects each company's uniqueness while achieving both scale benefits and specialization.",
         },
       ],
-    },
-    features: {
-      label: "Our Approach",
-      title:
-        "Fusing technology and operations to accelerate growth for mid-market Japanese IT service companies",
-      subtitle:
-        "Haven AI Partners builds an AI-native platform that fuses technology and operations to accelerate growth for mid-market Japanese IT service companies.",
-      items: [
-        {
-          title: "Hands-on Operational Support Beyond Capital",
-          description:
-            "Beyond funding, we provide hands-on support including sales enhancement, marketing, operational efficiency, and AI implementation. We transform traditional MSP, VAR, and SI companies through AI and automation while preserving customer trust and corporate culture, rebuilding them for the digital era.",
-        },
-        {
-          title: "Long-term, Sustainable Growth Foundation",
-          description:
-            "Haven operates as a permanent holding company with no exit timeline. We pursue long-term partnerships and continuous innovation rather than short-term returns, sharing knowledge across the group while respecting each company's independence.",
-        },
-      ],
-    },
-    strengths: {
-      label: "Our Strengths",
-      title: "Long-term Value Creation as a Strategic Acquirer",
-      subtitle:
-        "Unlike fund-style acquisitions driven primarily by investment returns, we are committed to long-term, sustainable value creation as a permanent operating company.",
-      haven: {
-        title: "Haven AI Partners",
-        subtitle: "Strategic Builder",
-        categories: [
-          {
-            label: "Characteristics & Purpose",
-            items: [
-              "Long-term value creation as a permanent operating company",
-              "Acquisitions funded through our own balance sheet",
-              "Collaboration between portfolio companies is a core principle",
-            ],
-          },
-          {
-            label: "Exit Strategy",
-            items: [
-              "No forced exits",
-              "Pursuing compound growth through M&A and technology",
-            ],
-          },
-          {
-            label: "Value-Up",
-            items: [
-              "Unique value-up through AI and digital transformation while respecting each company's independence",
-              "Growth through both existing business support and new customer acquisition",
-            ],
-          },
-        ],
-      },
-      fund: {
-        title: "Typical Investment Fund",
-        subtitle: "Financial Buyer",
-        categories: [
-          {
-            label: "Characteristics & Purpose",
-            items: [
-              "Sale within 3-5 years post-acquisition is the premise",
-              "Almost no collaboration between portfolio companies (individual optimization)",
-              "Financial approach leveraging LBO",
-            ],
-          },
-          {
-            label: "Exit Strategy",
-            items: [
-              "Mandatory exit within 3-5 years",
-              "Short-term flips under 1 year for smaller deals",
-            ],
-          },
-          {
-            label: "Value-Up",
-            items: [
-              "Limited expertise in IT/AI domains",
-              "Often outsourced to external consultants (hands-off)",
-              "Primarily profit extraction through cost-cutting",
-            ],
-          },
-        ],
-      },
     },
     partnership: {
       label: "Strategic Partnership",
       title: "Strategic Partnership with Recursive Inc.",
       description:
-        "Combining Haven's hands-on execution with Recursive's technical capabilities, we accelerate AI adoption for SMBs across Japan, delivering high-quality, sustainable results.",
+        "Haven AI Partners launched a strategic partnership with Recursive Inc. in January 2026. By combining Haven's field implementation capabilities with Recursive's cutting-edge technology, we steadily advance AI adoption for SMBs across Japan. We provide end-to-end support from strategy to implementation and operations, driving continuous value creation.",
       steps: [
         {
           number: "01",
           title: "Strategy",
           subtitle: "Consulting",
           description:
-            "Deeply understanding SMB field challenges to develop cost-effective AI implementation roadmaps.",
+            "Carefully organizing each company's field challenges and developing AI implementation roadmaps based on cost-effectiveness and feasibility.",
         },
         {
           number: "02",
           title: "Implementation",
           subtitle: "Development",
           description:
-            "Leveraging Recursive's cutting-edge technology to develop customized AI models and system integration.",
+            "Leveraging Recursive's cutting-edge technology to develop AI models and system integration tailored to each company's business characteristics. We prioritize implementation that takes root on the ground.",
         },
         {
           number: "03",
           title: "Operations",
           subtitle: "Operation",
           description:
-            "Continuous monitoring and model improvement post-deployment, supporting adoption and value creation on the ground.",
+            "Continuous monitoring and model improvement post-deployment, supporting results visualization and field adoption. We aim for sustained value creation, not one-time implementations.",
         },
       ],
     },

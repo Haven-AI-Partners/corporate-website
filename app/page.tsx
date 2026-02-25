@@ -10,8 +10,6 @@ import { VisionSection } from "@/components/sections/vision"
 import { LeadershipSection } from "@/components/sections/leadership"
 import { ChallengesSection } from "@/components/sections/challenges"
 import { ApproachSection } from "@/components/sections/approach"
-import { FeaturesSection } from "@/components/sections/features"
-import { StrengthsSection } from "@/components/sections/strengths"
 import { PartnershipSection } from "@/components/sections/partnership"
 import { MarketSection } from "@/components/sections/market"
 import { ContactSection } from "@/components/sections/contact"
@@ -29,8 +27,6 @@ export default function Page() {
       <LeadershipSection locale={locale} />
       <ChallengesSection locale={locale} />
       <ApproachSection locale={locale} />
-      <FeaturesSection locale={locale} />
-      <StrengthsSection locale={locale} />
       <PartnershipSection locale={locale} />
       <MarketSection locale={locale} />
       <AboutSection locale={locale} />

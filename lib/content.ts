@@ -13,10 +13,10 @@ export const content = {
       contact: "お問い合わせ",
     },
     hero: {
-      tagline: "AI時代の成長を牽引するテクノロジー企業グループ",
+      tagline: "日本企業を、AI時代の主役へ",
       title: "Haven AI Partners",
       subtitle:
-        "国内外の優れたAIサービスを日本全国に浸透させていく事で、日本企業の創造性・生産性向上への寄与を目指します",
+        "Havenは、AIを成長エンジンに変える次世代ITサービス・プラットフォームです。私たちは、志ある企業をグループに迎え入れ、共に進化しながら、日本企業を「AIネイティブ企業」へと育てていきます。",
       cta: "お問い合わせ",
     },
     about: {
@@ -40,13 +40,14 @@ export const content = {
     mission: {
       label: "ミッション",
       title:
-        "日本の企業が、誰もが使えるAIの力で高みを目指し、世界と協働しながら新たな価値を創り続ける社会を実現します",
+        "知識と時間の民主化が進む今、私たちは、人の可能性を解き放つ経営へと進化する必要があります。",
       subtitle:
-        "AIを原動力に日本企業が新たな価値を創り続ける社会を目指す",
+        "Empower every Japanese business to thrive in the age of AI",
     },
     vision: {
       label: "ビジョン",
-      title: "人の創造性と生産性を起点に、日本の産業の未来を新しくデザインする",
+      title: "To design Japan's industrial future by unlocking the creativity and productivity within every person",
+      description: "人々の生き方・働き方が再定義されるこの転換点で、日本のITサービス企業が持続的な成長機会を生み続けるエコシステムを構築します。",
       pillars: [
         {
           title: "Growth（成長）",
@@ -418,10 +419,10 @@ export const content = {
       contact: "Contact",
     },
     hero: {
-      tagline: "A technology group leading growth in the AI era",
+      tagline: "Putting Japanese businesses at the forefront of the AI era",
       title: "Haven AI Partners",
       subtitle:
-        "We aim to enhance the creativity and productivity of Japanese enterprises by bringing the world's best AI services to businesses across Japan.",
+        "Haven is a next-generation IT services platform that turns AI into a growth engine. We welcome ambitious companies into our group, evolving together to build AI-native enterprises in Japan.",
       cta: "Contact Us",
     },
     about: {
@@ -446,14 +447,16 @@ export const content = {
     mission: {
       label: "Mission",
       title:
-        "We strive to create a society where Japanese companies reach new heights with accessible AI, collaborating with the world to continuously create new value.",
+        "In an era of democratized knowledge and time, we must evolve toward a management that unleashes human potential.",
       subtitle:
-        "Aiming for a society where Japanese companies continuously create new value powered by AI",
+        "Empower every Japanese business to thrive in the age of AI",
     },
     vision: {
       label: "Vision",
       title:
-        "Redesigning the future of Japanese industry, starting from human creativity and productivity",
+        "To design Japan's industrial future by unlocking the creativity and productivity within every person",
+      description:
+        "At this turning point where the way people live and work is being redefined, we are building an ecosystem where Japan's IT service companies continuously generate sustainable growth opportunities.",
       pillars: [
         {
           title: "Growth",

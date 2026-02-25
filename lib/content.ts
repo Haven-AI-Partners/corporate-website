@@ -39,15 +39,14 @@ export const content = {
     },
     mission: {
       label: "ミッション",
-      title:
-        "知識と時間の民主化が進む今、私たちは、人の可能性を解き放つ経営へと進化する必要があります。",
+      title: "",
       subtitle:
-        "Empower every Japanese business to thrive in the age of AI",
+        "知識と時間の民主化が進む今、私たちは、人の可能性を解き放つ経営へと進化する必要があります。",
     },
     vision: {
       label: "ビジョン",
-      title: "To design Japan's industrial future by unlocking the creativity and productivity within every person",
-      description: "人々の生き方・働き方が再定義されるこの転換点で、日本のITサービス企業が持続的な成長機会を生み続けるエコシステムを構築します。",
+      title: "人々の生き方・働き方が再定義されるこの転換点で、日本のITサービス企業が持続的な成長機会を生み続けるエコシステムを構築します。",
+      description: "",
       pillars: [
         {
           title: "Growth（成長）",

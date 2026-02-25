@@ -19,9 +19,11 @@ export function VisionSection({ locale }: { locale: Locale }) {
           <h2 className="mt-4 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             {t.title}
           </h2>
-          <p className="mx-auto mt-6 max-w-3xl text-pretty text-lg text-muted-foreground">
-            {t.description}
-          </p>
+          {t.description && (
+            <p className="mx-auto mt-6 max-w-3xl text-pretty text-lg text-muted-foreground">
+              {t.description}
+            </p>
+          )}
         </div>
 
         <div className="mt-16 grid gap-8 sm:grid-cols-3">

@@ -25,10 +25,10 @@ export function ValuesSection({ locale }: { locale: Locale }) {
               className="rounded-xl border border-border bg-card p-6 shadow-sm"
             >
               <p className="text-lg font-semibold text-primary">
-                &ldquo;{item.en}&rdquo;
+                {item.en}
               </p>
               <p className="mt-2 text-base text-muted-foreground">
-                「{item.ja}」
+                {item.ja}
               </p>
             </div>
           ))}

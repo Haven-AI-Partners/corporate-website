@@ -2,15 +2,17 @@
 
 import { useState, useEffect } from "react"
 import { Menu, X, Globe } from "lucide-react"
+import Link from "next/link"
 import type { Locale } from "@/lib/content"
 import { content } from "@/lib/content"
 
 interface NavbarProps {
   locale: Locale
   onLocaleChange: (locale: Locale) => void
+  activePage?: "home" | "leadership" | "about"
 }
 
-export function Navbar({ locale, onLocaleChange }: NavbarProps) {
+export function Navbar({ locale, onLocaleChange, activePage = "home" }: NavbarProps) {
   const t = content[locale].nav
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileOpen, setIsMobileOpen] = useState(false)
@@ -22,54 +24,56 @@ export function Navbar({ locale, onLocaleChange }: NavbarProps) {
   }, [])
 
   const navItems = [
-    { href: "#mission", label: t.philosophy },
-    { href: "#leadership", label: t.leadership },
-    { href: "#challenges", label: t.business },
-    { href: "#partnership", label: t.partnership },
-    { href: "#market", label: t.market },
-    { href: "#about", label: t.about },
-    { href: "#contact", label: t.contact },
+    { href: "/", label: t.home, key: "home" },
+    { href: "/leadership", label: t.leadership, key: "leadership" },
+    { href: "/about", label: t.about, key: "about" },
   ]
+
+  const isHome = activePage === "home"
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+        isScrolled || !isHome
           ? "bg-card/95 backdrop-blur-md border-b border-border shadow-sm"
           : "bg-transparent"
       }`}
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <a
-            href="#"
+          <Link
+            href="/"
             className={`text-lg font-bold tracking-tight transition-colors ${
-              isScrolled ? "text-primary" : "text-[hsl(0,0%,100%)]"
+              isScrolled || !isHome ? "text-primary" : "text-[hsl(0,0%,100%)]"
             }`}
           >
             Haven AI Partners
-          </a>
+          </Link>
 
           {/* Desktop nav */}
           <div className="hidden lg:flex items-center gap-6">
             {navItems.map((item) => (
-              <a
-                key={item.href}
+              <Link
+                key={item.key}
                 href={item.href}
                 className={`text-sm transition-colors ${
-                  isScrolled
-                    ? "text-muted-foreground hover:text-foreground"
-                    : "text-[hsl(216,33%,75%)] hover:text-[hsl(0,0%,100%)]"
+                  activePage === item.key
+                    ? isScrolled || !isHome
+                      ? "text-primary font-medium"
+                      : "text-[hsl(0,0%,100%)] font-medium"
+                    : isScrolled || !isHome
+                      ? "text-muted-foreground hover:text-foreground"
+                      : "text-[hsl(216,33%,75%)] hover:text-[hsl(0,0%,100%)]"
                 }`}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
             <button
               type="button"
               onClick={() => onLocaleChange(locale === "ja" ? "en" : "ja")}
               className={`flex items-center gap-1.5 rounded-md border px-3 py-1.5 text-sm transition-colors ${
-                isScrolled
+                isScrolled || !isHome
                   ? "border-border text-muted-foreground hover:text-foreground hover:border-primary"
                   : "border-[hsl(216,33%,75%/0.3)] text-[hsl(216,33%,75%)] hover:text-[hsl(0,0%,100%)] hover:border-[hsl(0,0%,100%/0.5)]"
               }`}
@@ -85,7 +89,7 @@ export function Navbar({ locale, onLocaleChange }: NavbarProps) {
               type="button"
               onClick={() => onLocaleChange(locale === "ja" ? "en" : "ja")}
               className={`flex items-center gap-1.5 rounded-md border px-3 py-1.5 text-sm transition-colors ${
-                isScrolled
+                isScrolled || !isHome
                   ? "border-border text-muted-foreground hover:text-foreground"
                   : "border-[hsl(216,33%,75%/0.3)] text-[hsl(216,33%,75%)] hover:text-[hsl(0,0%,100%)]"
               }`}
@@ -97,7 +101,7 @@ export function Navbar({ locale, onLocaleChange }: NavbarProps) {
               type="button"
               onClick={() => setIsMobileOpen(!isMobileOpen)}
               className={`transition-colors ${
-                isScrolled
+                isScrolled || !isHome
                   ? "text-muted-foreground hover:text-foreground"
                   : "text-[hsl(216,33%,75%)] hover:text-[hsl(0,0%,100%)]"
               }`}
@@ -118,14 +122,18 @@ export function Navbar({ locale, onLocaleChange }: NavbarProps) {
         <div className="lg:hidden bg-card/98 backdrop-blur-md border-b border-border shadow-sm">
           <div className="mx-auto max-w-7xl px-6 py-4 flex flex-col gap-3">
             {navItems.map((item) => (
-              <a
-                key={item.href}
+              <Link
+                key={item.key}
                 href={item.href}
                 onClick={() => setIsMobileOpen(false)}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
+                className={`text-sm transition-colors py-1 ${
+                  activePage === item.key
+                    ? "text-primary font-medium"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

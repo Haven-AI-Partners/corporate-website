@@ -4,15 +4,10 @@ import { useState } from "react"
 import type { Locale } from "@/lib/content"
 import { Navbar } from "@/components/navbar"
 import { HeroSection } from "@/components/sections/hero"
-import { AboutSection } from "@/components/sections/about"
 import { MissionSection } from "@/components/sections/mission"
 import { VisionSection } from "@/components/sections/vision"
-import { LeadershipSection } from "@/components/sections/leadership"
-import { ChallengesSection } from "@/components/sections/challenges"
 import { ApproachSection } from "@/components/sections/approach"
 import { PartnershipSection } from "@/components/sections/partnership"
-import { MarketSection } from "@/components/sections/market"
-import { ContactSection } from "@/components/sections/contact"
 import { Footer } from "@/components/footer"
 
 export default function Page() {
@@ -20,17 +15,12 @@ export default function Page() {
 
   return (
     <main>
-      <Navbar locale={locale} onLocaleChange={setLocale} />
+      <Navbar locale={locale} onLocaleChange={setLocale} activePage="home" />
       <HeroSection locale={locale} />
       <MissionSection locale={locale} />
       <VisionSection locale={locale} />
-      <LeadershipSection locale={locale} />
-      <ChallengesSection locale={locale} />
       <ApproachSection locale={locale} />
       <PartnershipSection locale={locale} />
-      <MarketSection locale={locale} />
-      <AboutSection locale={locale} />
-      <ContactSection locale={locale} />
       <Footer locale={locale} />
     </main>
   )

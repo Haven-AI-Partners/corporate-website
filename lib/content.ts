@@ -3,14 +3,9 @@ export type Locale = "ja" | "en"
 export const content = {
   ja: {
     nav: {
-      philosophy: "理念",
+      home: "ホーム",
       leadership: "経営陣",
-      business: "事業",
-      partnership: "パートナーシップ",
-      market: "市場概要",
-      wayGroup: "WAYグループ",
       about: "会社概要",
-      contact: "お問い合わせ",
     },
     hero: {
       tagline: "日本企業を、AI時代の主役へ",
@@ -24,30 +19,27 @@ export const content = {
       title: "Haven AI Partners株式会社",
       items: [
         { label: "会社名", value: "Haven AI Partners株式会社" },
-        {
-          label: "本社",
-          value: "東京都渋谷区猿楽町17-10 代官山アートヴィレッジ2C",
-        },
-        { label: "設立年度", value: "2025年" },
+        { label: "代表取締役", value: "山田　雄大" },
+        { label: "設立", value: "2025年12月" },
         {
           label: "事業内容",
           value: "AIソリューション / ITサービスの導入支援",
         },
       ],
       description:
-        "Haven AI Partnersは、MSP（マネージドサービスプロバイダー）、リセラー企業、SIerをはじめとする信頼ある国内ITサービス企業を、戦略的にグループへ迎え入れます。各社の独自性を尊重しながら経営基盤を強化するとともに、国内外のAIサービスを日本企業へ届ける架け橋となります。そして、AI時代の成長を牽引するテクノロジー企業グループを構築します。",
+        "Haven AI Partnersは、MSP、リセラー企業、SIerを戦略的にグループへ迎え入れ、AI時代の成長を牽引するテクノロジー企業グループを構築します。",
     },
     mission: {
       label: "ミッション",
       title:
-        "知識と時間の民主化が進む今、私たちは、人の可能性を解き放つ経営へと進化する必要があります。",
+        "知識と時間の民主化が進む今、人の可能性を解き放つ経営へ。",
       subtitle:
         "Empower every Japanese business to thrive in the age of AI",
     },
     vision: {
       label: "ビジョン",
       title: "To design Japan's industrial future by unlocking the creativity and productivity within every person",
-      description: "人々の生き方・働き方が再定義されるこの転換点で、日本のITサービス企業が持続的な成長機会を生み続けるエコシステムを構築します。",
+      description: "日本のITサービス企業が持続的な成長機会を生み続けるエコシステムを構築します。",
       pillars: [
         {
           title: "Growth（成長）",
@@ -71,6 +63,7 @@ export const content = {
       members: [
         {
           name: "Yuta Yamada",
+          nameJa: "山田　雄大",
           role: "創業者兼Chief Executive Officer",
           memberSubtitle:
             "投資銀行 ×グローバル企業 ×ヘルスケアで磨いた成長と再生のプロフェッショナル",
@@ -117,6 +110,17 @@ export const content = {
             },
           ],
         },
+      ],
+    },
+    values: {
+      label: "バリュー",
+      title: "Havenの 5 Values",
+      items: [
+        { en: "Champion Customers & Partners", ja: "顧客とパートナーの成功を、最優先に" },
+        { en: "Build Trust in Every Moment", ja: "すべての瞬間に、誠実さを。" },
+        { en: "Lead with Humility & Stewardship", ja: "謙虚に学び、責任を果たす。" },
+        { en: "Advance with Speed & Purpose", ja: "意志あるスピードで前進する。" },
+        { en: "Win Together, Own the Outcome", ja: "チーム力で勝ち、結果に責任を持つ。" },
       ],
     },
     challenges: {
@@ -172,35 +176,31 @@ export const content = {
       label: "解決アプローチ",
       title: "Havenの解決アプローチ",
       subtitle:
-        "それぞれの強みを活かしながら、長期的な視点で4つの柱を通じて持続的な成長と価値創造を支援します。",
+        "4つの柱を通じて持続的な成長を実現支援します。",
       pillars: [
         {
           number: 1,
           title: "人材・組織",
           subtitle: "コミュニティを基盤とした採用と組織強化",
-          description:
-            "トップタレントに選ばれ続ける組織へ。独自のタレントコミュニティとグローバルなネットワークを活用し、採用力を高めるとともに、エンジニアのキャリア開発とエンゲージメント向上を重視します。",
+          description: "",
         },
         {
           number: 2,
           title: "AI展開",
-          subtitle: "実証から実装へ、段階的に価値を創出",
-          description:
-            "まずは社内業務へのAI活用から着手し、蓄積した知見を基に、既存・新規顧客向けのAI/DXオファリングへと展開します。単なる提案にとどまらず、現場に根付く形での実装を重視します。",
+          subtitle: "社内活用から顧客提供へ段階的に展開",
+          description: "",
         },
         {
           number: 3,
           title: "効率化・最適化",
-          subtitle: "コア価値を守りながら、経営基盤を強化",
-          description:
-            "既存事業の安定運用を前提に、成長加速のためのリソース再配分・コスト構造の最適化を図ります。創出した余力は、AI技術開発や人材育成など将来への投資へ再配分します。短期的な効率化にとどまらない、持続的な企業価値向上を目指します。",
+          subtitle: "経営基盤を強化し、成長投資へ再配分",
+          description: "",
         },
         {
           number: 4,
-          title: "プラットフォーム役割",
-          subtitle: "成長戦略の中核となる統合プラットフォームへ",
-          description:
-            "連続的なM&Aを通じて顧客基盤と事業領域を拡張し、サービスポートフォリオを強化します。各社の独自性を尊重しながら統合を進め、スケールメリットと専門性の両立を図ります。持続的なスケールと社会的インパクトの両立を目指します。",
+          title: "プラットフォームとしての役割",
+          subtitle: "連続的M&Aによる統合と拡張",
+          description: "",
         },
       ],
     },
@@ -327,14 +327,9 @@ export const content = {
   },
   en: {
     nav: {
-      philosophy: "Philosophy",
+      home: "Home",
       leadership: "Leadership",
-      business: "Business",
-      partnership: "Partnership",
-      market: "Market",
-      wayGroup: "WAY Group",
       about: "About",
-      contact: "Contact",
     },
     hero: {
       tagline: "Putting Japanese businesses at the forefront of the AI era",
@@ -348,24 +343,20 @@ export const content = {
       title: "Haven AI Partners Co., Ltd.",
       items: [
         { label: "Company", value: "Haven AI Partners Co., Ltd." },
-        {
-          label: "Headquarters",
-          value:
-            "Daikanyama Art Village 2C, 17-10 Sarugakucho, Shibuya-ku, Tokyo",
-        },
-        { label: "Founded", value: "2025" },
+        { label: "Representative Director", value: "Yuta Yamada" },
+        { label: "Founded", value: "December 2025" },
         {
           label: "Business",
           value: "AI Solutions / IT Service Implementation Support",
         },
       ],
       description:
-        "Haven AI Partners strategically welcomes trusted domestic IT service companies — including MSPs, resellers, and SIers — into our group. While respecting each company's uniqueness and strengthening their management foundations, we serve as a bridge to deliver AI services from Japan and abroad to Japanese enterprises. Together, we are building a technology group that leads growth in the AI era.",
+        "Haven AI Partners strategically welcomes MSPs, resellers, and SIers into our group, building a technology group that leads growth in the AI era.",
     },
     mission: {
       label: "Mission",
       title:
-        "知識と時間の民主化が進む今、私たちは、人の可能性を解き放つ経営へと進化する必要があります。",
+        "知識と時間の民主化が進む今、人の可能性を解き放つ経営へ。",
       subtitle:
         "Empower every Japanese business to thrive in the age of AI",
     },
@@ -374,7 +365,7 @@ export const content = {
       title:
         "To design Japan's industrial future by unlocking the creativity and productivity within every person",
       description:
-        "人々の生き方・働き方が再定義されるこの転換点で、日本のITサービス企業が持続的な成長機会を生み続けるエコシステムを構築します。",
+        "日本のITサービス企業が持続的な成長機会を生み続けるエコシステムを構築します。",
       pillars: [
         {
           title: "Growth",
@@ -400,6 +391,7 @@ export const content = {
       members: [
         {
           name: "Yuta Yamada",
+          nameJa: "山田　雄大",
           role: "Representative Director & CEO",
           memberSubtitle:
             "A growth and turnaround professional forged in investment banking, global corporations, and healthcare",
@@ -447,6 +439,17 @@ export const content = {
             },
           ],
         },
+      ],
+    },
+    values: {
+      label: "Values",
+      title: "Haven's 5 Values",
+      items: [
+        { en: "Champion Customers & Partners", ja: "顧客とパートナーの成功を、最優先に" },
+        { en: "Build Trust in Every Moment", ja: "すべての瞬間に、誠実さを。" },
+        { en: "Lead with Humility & Stewardship", ja: "謙虚に学び、責任を果たす。" },
+        { en: "Advance with Speed & Purpose", ja: "意志あるスピードで前進する。" },
+        { en: "Win Together, Own the Outcome", ja: "チーム力で勝ち、結果に責任を持つ。" },
       ],
     },
     challenges: {

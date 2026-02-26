@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import type { Locale } from "@/lib/content"
 import { content } from "@/lib/content"
 
@@ -23,21 +24,17 @@ export function Footer({ locale }: { locale: Locale }) {
           <nav aria-label="Footer navigation">
             <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
               {[
-                { href: "#mission", label: nav.philosophy },
-                { href: "#leadership", label: nav.leadership },
-                { href: "#challenges", label: nav.business },
-                { href: "#partnership", label: nav.partnership },
-                { href: "#market", label: nav.market },
-                { href: "#about", label: nav.about },
-                { href: "#contact", label: nav.contact },
+                { href: "/", label: nav.home },
+                { href: "/leadership", label: nav.leadership },
+                { href: "/about", label: nav.about },
               ].map((item) => (
                 <li key={item.href}>
-                  <a
+                  <Link
                     href={item.href}
                     className="text-sm text-[hsl(216,33%,65%)] hover:text-[hsl(0,0%,100%)] transition-colors"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

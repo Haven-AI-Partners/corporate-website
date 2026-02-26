@@ -41,9 +41,16 @@ export function LeadershipSection({ locale }: { locale: Locale }) {
                 </div>
                 <div className="flex-1 pt-1">
                   <div className="flex items-center gap-2">
-                    <h3 className="text-xl font-semibold text-foreground">
-                      {member.name}
-                    </h3>
+                    <div>
+                      {"nameJa" in member && member.nameJa && (
+                        <p className="text-lg font-semibold text-foreground">
+                          {member.nameJa}
+                        </p>
+                      )}
+                      <h3 className="text-xl font-semibold text-foreground">
+                        {member.name}
+                      </h3>
+                    </div>
                     <a
                       href={member.linkedin}
                       target="_blank"

@@ -63,7 +63,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-plus-jakarta)', 'var(--font-mplus1p)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-inter)', 'var(--font-mplus1p)', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         lg: 'var(--radius)',

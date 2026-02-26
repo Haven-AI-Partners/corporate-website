@@ -1,7 +1,6 @@
 "use client"
 
-import { useState } from "react"
-import type { Locale } from "@/lib/content"
+import { useLocale } from "@/hooks/use-locale"
 import { Navbar } from "@/components/navbar"
 import { HeroSection } from "@/components/sections/hero"
 import { MissionSection } from "@/components/sections/mission"
@@ -11,7 +10,7 @@ import { PartnershipSection } from "@/components/sections/partnership"
 import { Footer } from "@/components/footer"
 
 export default function Page() {
-  const [locale, setLocale] = useState<Locale>("ja")
+  const { locale, setLocale } = useLocale()
 
   return (
     <main>

@@ -1,14 +1,13 @@
 "use client"
 
-import { useState } from "react"
-import type { Locale } from "@/lib/content"
+import { useLocale } from "@/hooks/use-locale"
 import { Navbar } from "@/components/navbar"
 import { LeadershipSection } from "@/components/sections/leadership"
 import { ValuesSection } from "@/components/sections/values"
 import { Footer } from "@/components/footer"
 
 export default function LeadershipPage() {
-  const [locale, setLocale] = useState<Locale>("ja")
+  const { locale, setLocale } = useLocale()
 
   return (
     <main>

@@ -356,7 +356,7 @@ export const content = {
     mission: {
       label: "Mission",
       title:
-        "知識と時間の民主化が進む今、人の可能性を解き放つ経営へ。",
+        "As knowledge and time become democratized, we move toward management that unlocks human potential.",
       subtitle:
         "Empower every Japanese business to thrive in the age of AI",
     },
@@ -365,7 +365,7 @@ export const content = {
       title:
         "To design Japan's industrial future by unlocking the creativity and productivity within every person",
       description:
-        "日本のITサービス企業が持続的な成長機会を生み続けるエコシステムを構築します。",
+        "Building an ecosystem where Japan's IT service companies continuously generate sustainable growth opportunities.",
       pillars: [
         {
           title: "Growth",

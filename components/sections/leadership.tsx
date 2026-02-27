@@ -23,31 +23,31 @@ export function LeadershipSection({ locale }: { locale: Locale }) {
           </p>
         </div>
 
-        <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-16 grid gap-6 md:grid-cols-3">
           {t.members.map((member) => (
             <div
               key={member.name}
-              className="rounded-xl border border-border bg-card p-8 shadow-sm"
+              className="rounded-xl border border-border bg-card p-6 shadow-sm"
             >
-              <div className="flex items-start gap-5 mb-4">
-                <div className="relative h-20 w-20 flex-shrink-0 overflow-hidden rounded-full border-2 border-primary/20">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-full border-2 border-primary/20">
                   <Image
                     src={member.image}
                     alt={member.name}
                     fill
                     className="object-cover"
-                    sizes="80px"
+                    sizes="64px"
                   />
                 </div>
                 <div className="flex-1 pt-1">
                   <div className="flex items-center gap-2">
                     <div>
                       {"nameJa" in member && member.nameJa && (
-                        <p className="text-lg font-semibold text-foreground">
+                        <p className="text-base font-semibold text-foreground">
                           {member.nameJa}
                         </p>
                       )}
-                      <h3 className="text-xl font-semibold text-foreground">
+                      <h3 className="text-lg font-semibold text-foreground">
                         {member.name}
                       </h3>
                     </div>

@@ -110,6 +110,30 @@ export const content = {
             },
           ],
         },
+        {
+          name: "Alexandre Balon-Perin",
+          role: "Chief Technology Officer",
+          memberSubtitle:
+            "ベルギー出身。日本のテック業界で10年以上の経験を持つテクノロジーエグゼクティブ",
+          bio: "PanalytでCTOとして5年間にわたり技術組織を率い、成長とイノベーションを推進。それ以前はPaidyやGilt Groupeで主要なリーダーシップおよびエンジニアリング職を歴任し、マルチディシプリナリーなエンジニアリングチームのスケーリングと堅牢なプラットフォームアーキテクチャの構築を専門とする。AIとコンピューテーショナル・インテリジェンスの専門的な学術バックグラウンドを持ち、データドリブンな戦略によるオペレーショナル・エクセレンスと長期的なビジネス価値の創出に注力。",
+          education: "ブリュッセル自由大学(ULB) 工学士; ULB/NTNUコンピューテーショナル・インテリジェンス修士",
+          image: "/images/balon-perin-alexandre.jpg",
+          linkedin: "https://www.linkedin.com/in/alexandrebalonperin/",
+          skills: [
+            {
+              title: "エンジニアリングリーダーシップ",
+              description: "Panalyt CTO、Paidy Head of Engineering歴任",
+            },
+            {
+              title: "AI・データ戦略",
+              description: "コンピューテーショナル・インテリジェンス専攻 (NTNU)",
+            },
+            {
+              title: "日本テック業界の知見",
+              description: "日本のテック業界で10年以上のリーダーシップ経験",
+            },
+          ],
+        },
       ],
     },
     values: {
@@ -436,6 +460,31 @@ export const content = {
             {
               title: "Hundreds of Employees",
               description: "Large-scale organization management",
+            },
+          ],
+        },
+        {
+          name: "Alexandre Balon-Perin",
+          role: "Chief Technology Officer",
+          memberSubtitle:
+            "Originally from Belgium, a technology executive with over a decade of experience in the Japanese tech sector",
+          bio: "Most recently served as Chief Technology Officer at Panalyt, leading the technical organization through five years of growth and innovation. Previously held key leadership and engineering roles at Paidy and Gilt Groupe, specializing in scaling multi-disciplinary engineering teams and building robust platform architectures. With a specialized academic background in AI and Computational Intelligence, he focuses on leveraging data-driven strategies to drive operational excellence and long-term business value.",
+          education:
+            "B.S. Engineering, ULB; M.S. Computational Intelligence, ULB/NTNU",
+          image: "/images/balon-perin-alexandre.jpg",
+          linkedin: "https://www.linkedin.com/in/alexandrebalonperin/",
+          skills: [
+            {
+              title: "Engineering Leadership",
+              description: "Former CTO at Panalyt & Head of Engineering at Paidy",
+            },
+            {
+              title: "AI & Data Strategy",
+              description: "Specialized in Computational Intelligence (NTNU)",
+            },
+            {
+              title: "Japan Tech Expertise",
+              description: "Over a decade of leadership in the Japanese tech landscape",
             },
           ],
         },

@@ -13,8 +13,8 @@ const inter = Inter({
 })
 
 const mPlus1p = M_PLUS_1p({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '700'],
+  subsets: ['latin', 'japanese'],
+  weight: ['300'],
   variable: '--font-mplus1p',
   display: 'swap',
 })

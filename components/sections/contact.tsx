@@ -10,10 +10,7 @@ export function ContactSection({ locale }: { locale: Locale }) {
   return (
     <section id="contact" className="py-24 lg:py-32 bg-[hsl(224,54%,16%)]">
       <div className="mx-auto max-w-3xl px-6 text-center">
-        <p className="text-sm font-light uppercase tracking-[0.25em] text-[hsl(216,33%,75%)]">
-          {t.label}
-        </p>
-        <h2 className="mt-4 text-balance text-3xl font-bold tracking-tight text-[hsl(0,0%,100%)] sm:text-4xl">
+        <h2 className="text-balance text-3xl font-bold tracking-tight text-[hsl(0,0%,100%)] sm:text-4xl">
           {t.title}
         </h2>
         <p className="mt-6 text-pretty text-lg text-[hsl(216,33%,75%)]">

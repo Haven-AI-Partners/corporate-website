@@ -1,7 +1,6 @@
 "use client"
 
-import { useState } from "react"
-import type { Locale } from "@/lib/content"
+import { useLocale } from "@/hooks/use-locale"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 
@@ -130,7 +129,7 @@ Email: info@havenaipartners.com`,
 }
 
 export default function TermsPage() {
-  const [locale, setLocale] = useState<Locale>("ja")
+  const { locale, setLocale } = useLocale()
   const t = termsContent[locale]
 
   return (

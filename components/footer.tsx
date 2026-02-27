@@ -17,9 +17,9 @@ export function Footer({ locale }: { locale: Locale }) {
             <Image
               src="/haven-logo.png"
               alt="Haven AI Partners"
-              width={160}
-              height={40}
-              className="h-10 w-auto"
+              width={240}
+              height={60}
+              className="h-14 w-auto"
             />
             <p className="mt-1 text-xs text-[hsl(216,33%,65%)]">
               {t.confidential}

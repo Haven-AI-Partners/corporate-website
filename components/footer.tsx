@@ -27,6 +27,8 @@ export function Footer({ locale }: { locale: Locale }) {
                 { href: "/", label: nav.home },
                 { href: "/leadership", label: nav.leadership },
                 { href: "/about", label: nav.about },
+                { href: "/terms", label: locale === "ja" ? "利用規約" : "Terms" },
+                { href: "/privacy", label: locale === "ja" ? "プライバシーポリシー" : "Privacy" },
               ].map((item) => (
                 <li key={item.href}>
                   <Link

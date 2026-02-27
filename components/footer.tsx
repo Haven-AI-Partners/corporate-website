@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import type { Locale } from "@/lib/content"
 import { content } from "@/lib/content"
 
@@ -13,9 +14,13 @@ export function Footer({ locale }: { locale: Locale }) {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex flex-col items-center gap-8 md:flex-row md:justify-between">
           <div>
-            <p className="text-lg font-bold text-[hsl(0,0%,100%)]">
-              Haven AI Partners
-            </p>
+            <Image
+              src="/haven-logo.png"
+              alt="Haven AI Partners"
+              width={160}
+              height={40}
+              className="h-10 w-auto"
+            />
             <p className="mt-1 text-xs text-[hsl(216,33%,65%)]">
               {t.confidential}
             </p>

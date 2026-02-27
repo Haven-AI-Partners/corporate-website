@@ -18,8 +18,7 @@ export function AboutSection({ locale }: { locale: Locale }) {
         </h2>
 
         <div className="mt-12 grid gap-8 lg:grid-cols-2">
-          <div className="rounded-xl border border-border bg-card p-8 shadow-sm">
-            <Building2 className="mb-6 h-8 w-8 text-primary" />
+          <div>
             <dl className="flex flex-col gap-5">
               {t.items.map((item) => (
                 <div key={item.label}>

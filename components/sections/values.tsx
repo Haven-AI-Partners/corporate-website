@@ -22,7 +22,7 @@ export function ValuesSection({ locale }: { locale: Locale }) {
           {t.items.map((item, i) => (
             <div
               key={i}
-              className="rounded-xl border border-border bg-card p-6 shadow-sm"
+              className="py-4"
             >
               <p className="text-lg font-semibold text-primary">
                 {item.en}

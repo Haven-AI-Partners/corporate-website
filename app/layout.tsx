@@ -1,5 +1,6 @@
 import React from "react"
 import type { Metadata } from 'next'
+import { Analytics } from "@vercel/analytics/next"
 import { Inter, M_PLUS_1p } from 'next/font/google'
 
 import './globals.css'
@@ -31,7 +32,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" className={`${inter.variable} ${mPlus1p.variable}`}>
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }

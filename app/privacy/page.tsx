@@ -30,7 +30,7 @@ const privacyContent = {
 • オペレーティングシステム
 • 参照元URL
 • サイト内での閲覧ページ・行動履歴
-• Cookie情報`,
+• アクセス解析データ（匿名）`,
       },
       {
         heading: "3. 利用目的",
@@ -50,10 +50,8 @@ const privacyContent = {
 • 業務委託先に対して、利用目的の達成に必要な範囲で個人情報を提供する場合（この場合、委託先に対して適切な管理・監督を行います）`,
       },
       {
-        heading: "5. Cookieおよびアクセス解析ツール",
-        body: `当社は、サイトの利便性向上およびアクセス状況の把握のため、Cookieおよびアクセス解析ツール（Google Analyticsなど）を使用することがあります。これらのツールは匿名の情報を収集しますが、個人を特定するものではありません。
-
-Cookieの使用を希望されない場合は、ブラウザの設定で無効にすることができます。ただし、一部の機能が正常に動作しない場合があります。`,
+        heading: "5. アクセス解析ツール",
+        body: `当社は、サイトの利便性向上およびアクセス状況の把握のため、Vercel Analyticsを使用しています。Vercel Analyticsはプライバシーに配慮した解析ツールであり、Cookieを使用せず、匿名のアクセスデータのみを収集します。個人を特定する情報は収集されません。`,
       },
       {
         heading: "6. 安全管理措置",
@@ -105,7 +103,7 @@ Information collected automatically:
 • Operating system
 • Referring URL
 • Pages viewed and browsing behavior
-• Cookie data`,
+• Anonymous analytics data`,
       },
       {
         heading: "3. Purpose of Use",
@@ -125,10 +123,8 @@ Information collected automatically:
 • When disclosing to service providers within the scope necessary to achieve the purpose of use (in such cases, we ensure appropriate management and supervision of the provider)`,
       },
       {
-        heading: "5. Cookies and Analytics",
-        body: `We may use cookies and analytics tools (such as Google Analytics) to improve website usability and understand traffic patterns. These tools collect anonymous information and do not identify individuals.
-
-You may disable cookies through your browser settings. However, some features of our website may not function properly as a result.`,
+        heading: "5. Analytics",
+        body: `We use Vercel Analytics to improve website usability and understand traffic patterns. Vercel Analytics is a privacy-friendly analytics tool that does not use cookies and only collects anonymous access data. No personally identifiable information is collected.`,
       },
       {
         heading: "6. Security Measures",

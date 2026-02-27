@@ -1,14 +1,14 @@
 import React from "react"
 import type { Metadata } from 'next'
 import { Analytics } from "@vercel/analytics/next"
-import { Inter, M_PLUS_1p } from 'next/font/google'
+import { Plus_Jakarta_Sans, M_PLUS_1p } from 'next/font/google'
 
 import './globals.css'
 
-const inter = Inter({
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-inter',
+  variable: '--font-plus-jakarta-sans',
   display: 'swap',
 })
 
@@ -31,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="ja" className={`${inter.variable} ${mPlus1p.variable}`}>
+    <html lang="ja" className={`${plusJakartaSans.variable} ${mPlus1p.variable}`}>
       <body className="font-sans antialiased">
         {children}
         <Analytics />

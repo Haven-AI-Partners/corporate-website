@@ -6,6 +6,7 @@ export const content = {
       home: "ホーム",
       leadership: "経営陣",
       about: "会社概要",
+      news: "ニュース",
     },
     hero: {
       tagline: "日本企業を、AI時代の主役へ",
@@ -354,6 +355,7 @@ export const content = {
       home: "Home",
       leadership: "Leadership",
       about: "About",
+      news: "News",
     },
     hero: {
       tagline: "Putting Japanese businesses at the forefront of the AI era",

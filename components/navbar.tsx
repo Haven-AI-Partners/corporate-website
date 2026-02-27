@@ -9,7 +9,7 @@ import { content } from "@/lib/content"
 interface NavbarProps {
   locale: Locale
   onLocaleChange: (locale: Locale) => void
-  activePage?: "home" | "leadership" | "about" | "terms" | "privacy"
+  activePage?: "home" | "leadership" | "about" | "news" | "terms" | "privacy"
 }
 
 export function Navbar({ locale, onLocaleChange, activePage = "home" }: NavbarProps) {
@@ -27,6 +27,7 @@ export function Navbar({ locale, onLocaleChange, activePage = "home" }: NavbarPr
     { href: "/", label: t.home, key: "home" },
     { href: "/leadership", label: t.leadership, key: "leadership" },
     { href: "/about", label: t.about, key: "about" },
+    { href: "/news", label: t.news, key: "news" },
   ]
 
   const isHome = activePage === "home"

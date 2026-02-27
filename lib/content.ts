@@ -118,7 +118,7 @@ export const content = {
           bio: "PanalytでCTOとして5年間にわたり技術組織を率い、成長とイノベーションを推進。それ以前はPaidyやGilt Groupeで主要なリーダーシップおよびエンジニアリング職を歴任し、マルチディシプリナリーなエンジニアリングチームのスケーリングと堅牢なプラットフォームアーキテクチャの構築を専門とする。AIとコンピューテーショナル・インテリジェンスの専門的な学術バックグラウンドを持ち、データドリブンな戦略によるオペレーショナル・エクセレンスと長期的なビジネス価値の創出に注力。",
           education: "ブリュッセル自由大学(ULB) 工学士; ULB/NTNUコンピューテーショナル・インテリジェンス修士",
           image: "/images/balon-perin-alexandre.jpg",
-          linkedin: "https://www.linkedin.com/in/alexandrebalonperin/",
+          linkedin: "https://www.linkedin.com/in/abalonperin/",
           skills: [
             {
               title: "エンジニアリングリーダーシップ",
@@ -472,7 +472,7 @@ export const content = {
           education:
             "B.S. Engineering, ULB; M.S. Computational Intelligence, ULB/NTNU",
           image: "/images/balon-perin-alexandre.jpg",
-          linkedin: "https://www.linkedin.com/in/alexandrebalonperin/",
+          linkedin: "https://www.linkedin.com/in/abalonperin/",
           skills: [
             {
               title: "Engineering Leadership",

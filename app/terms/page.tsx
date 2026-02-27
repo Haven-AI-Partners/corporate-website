@@ -21,7 +21,7 @@ const termsContent = {
       },
       {
         heading: "第3条（サービスの内容）",
-        body: `当社は、AIソリューションおよびITサービスの導入支援に関する情報提供、お問い合わせ窓口の提供、その他当社が定めるサービスを本サイトを通じて提供します。当社は、利用者に事前の通知なく、本サービスの内容を変更、追加、または廃止することがあります。`,
+        body: `当社は、本サイトを通じて、当社の事業に関する情報の提供およびお問い合わせ窓口の提供を行います。当社は、利用者に事前の通知なく、本サイトの内容を変更、追加、または廃止することがあります。`,
       },
       {
         heading: "第4条（知的財産権）",
@@ -81,7 +81,7 @@ Haven AI Partners株式会社
       },
       {
         heading: "3. Description of Services",
-        body: `The Company provides information about AI solutions and IT service implementation support, contact services, and other services as determined by the Company through this website. We reserve the right to modify, add, or discontinue any aspect of our Services at any time without prior notice.`,
+        body: `The Company provides information about its business activities and a contact channel through this website. We reserve the right to modify, add, or discontinue any aspect of the website at any time without prior notice.`,
       },
       {
         heading: "4. Intellectual Property",

@@ -115,7 +115,7 @@ export const content = {
           role: "Chief Technology Officer",
           memberSubtitle:
             "ベルギー出身。日本のテック業界で10年以上の経験を持つテクノロジーエグゼクティブ",
-          bio: "PanalytでCTOとして5年間にわたり技術組織を率い、成長とイノベーションを推進。それ以前はPaidyやGilt Groupeで主要なリーダーシップおよびエンジニアリング職を歴任し、マルチディシプリナリーなエンジニアリングチームのスケーリングと堅牢なプラットフォームアーキテクチャの構築を専門とする。AIとコンピューテーショナル・インテリジェンスの専門的な学術バックグラウンドを持ち、データドリブンな戦略によるオペレーショナル・エクセレンスと長期的なビジネス価値の創出に注力。",
+          bio: "PanalytでCTOとして5年間、技術組織の成長とイノベーションを推進。PaidyやGilt Groupeでエンジニアリングチームのスケーリングとプラットフォーム構築を主導。AI・コンピューテーショナルインテリジェンスの知見を活かし、データドリブンな戦略で事業価値を創出。",
           education: "ブリュッセル自由大学(ULB) 工学士; ULB/NTNUコンピューテーショナル・インテリジェンス修士",
           image: "/images/balon-perin-alexandre.jpg",
           linkedin: "https://www.linkedin.com/in/abalonperin/",
@@ -468,7 +468,7 @@ export const content = {
           role: "Chief Technology Officer",
           memberSubtitle:
             "Originally from Belgium, a technology executive with over a decade of experience in the Japanese tech sector",
-          bio: "Most recently served as Chief Technology Officer at Panalyt, leading the technical organization through five years of growth and innovation. Previously held key leadership and engineering roles at Paidy and Gilt Groupe, specializing in scaling multi-disciplinary engineering teams and building robust platform architectures. With a specialized academic background in AI and Computational Intelligence, he focuses on leveraging data-driven strategies to drive operational excellence and long-term business value.",
+          bio: "Served as CTO at Panalyt for five years, driving growth and technical innovation. Previously led engineering teams at Paidy and Gilt Groupe, scaling platforms and multi-disciplinary teams. Applies his AI and Computational Intelligence background to data-driven strategies for operational excellence.",
           education:
             "B.S. Engineering, ULB; M.S. Computational Intelligence, ULB/NTNU",
           image: "/images/balon-perin-alexandre.jpg",

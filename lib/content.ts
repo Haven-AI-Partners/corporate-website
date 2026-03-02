@@ -343,6 +343,15 @@ export const content = {
       description: "ご質問やご相談がございましたら、お気軽にお問い合わせください。",
       email: "info@havenaipartners.com",
       cta: "メールで問い合わせる",
+      form: {
+        name: "お名前",
+        firstName: "姓",
+        lastName: "名",
+        emailLabel: "メールアドレス",
+        message: "メッセージ",
+        required: "必須",
+        submit: "送信",
+      },
     },
     footer: {
       copyright: "Haven AI Partners株式会社. All rights reserved.",
@@ -706,11 +715,20 @@ export const content = {
     },
     contact: {
       label: "Contact",
-      title: "Get in Touch",
+      title: "Contact Us",
       description:
         "If you have any questions or would like to discuss opportunities, please don't hesitate to reach out.",
       email: "info@havenaipartners.com",
       cta: "Send Email",
+      form: {
+        name: "Name",
+        firstName: "First Name",
+        lastName: "Last Name",
+        emailLabel: "Email",
+        message: "Message",
+        required: "required",
+        submit: "Submit",
+      },
     },
     footer: {
       copyright: "Haven AI Partners Co., Ltd. All rights reserved.",

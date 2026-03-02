@@ -10,14 +10,14 @@ export function Footer({ locale }: { locale: Locale }) {
   const nav = content[locale].nav
 
   return (
-    <footer className="border-t border-[hsl(220,15%,25%)] bg-[hsl(220,20%,15%)]">
+    <footer className="border-t border-[hsl(224,40%,24%)] bg-[hsl(224,58%,16%)]">
       {/* Newsletter signup */}
       <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16">
         <div className="flex flex-col items-center gap-6 sm:flex-row sm:justify-center">
           <input
             type="email"
             placeholder={t.newsletter.placeholder}
-            className="w-full sm:w-80 rounded-full border border-[hsl(220,15%,35%)] bg-transparent px-6 py-3 text-sm text-white placeholder:text-[hsl(220,15%,50%)] outline-none focus:border-primary transition-colors"
+            className="w-full sm:w-80 rounded-full border border-[hsl(224,30%,35%)] bg-transparent px-6 py-3 text-sm text-white placeholder:text-[hsl(224,30%,50%)] outline-none focus:border-primary transition-colors"
           />
           <button
             type="button"
@@ -28,7 +28,7 @@ export function Footer({ locale }: { locale: Locale }) {
         </div>
       </div>
 
-      <div className="border-t border-[hsl(220,15%,25%)]">
+      <div className="border-t border-[hsl(224,40%,24%)]">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 py-8">
           <div className="flex flex-col items-center gap-8 md:flex-row md:justify-between">
             <div>
@@ -39,7 +39,7 @@ export function Footer({ locale }: { locale: Locale }) {
                 height={50}
                 style={{ width: 200, height: "auto" }}
               />
-              <p className="mt-1 text-xs text-[hsl(220,15%,50%)]">
+              <p className="mt-1 text-xs text-[hsl(224,30%,50%)]">
                 {t.confidential}
               </p>
             </div>
@@ -57,7 +57,7 @@ export function Footer({ locale }: { locale: Locale }) {
                   <li key={item.href}>
                     <Link
                       href={item.href}
-                      className="text-sm text-[hsl(220,15%,60%)] hover:text-white transition-colors"
+                      className="text-sm text-[hsl(224,30%,65%)] hover:text-white transition-colors"
                     >
                       {item.label}
                     </Link>
@@ -70,7 +70,7 @@ export function Footer({ locale }: { locale: Locale }) {
               href="https://www.linkedin.com/company/haven-ai-partners"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[hsl(220,15%,60%)] hover:text-white transition-colors"
+              className="text-[hsl(224,30%,65%)] hover:text-white transition-colors"
               aria-label="LinkedIn"
             >
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
@@ -79,8 +79,8 @@ export function Footer({ locale }: { locale: Locale }) {
             </a>
           </div>
 
-          <div className="mt-8 border-t border-[hsl(220,15%,25%)] pt-8 text-center">
-            <p className="text-xs text-[hsl(220,15%,50%)]">
+          <div className="mt-8 border-t border-[hsl(224,40%,24%)] pt-8 text-center">
+            <p className="text-xs text-[hsl(224,30%,50%)]">
               &copy; {new Date().getFullYear()} {t.copyright}
             </p>
           </div>

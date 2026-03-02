@@ -8,12 +8,12 @@ export function ContactSection({ locale }: { locale: Locale }) {
   const t = content[locale].contact
 
   return (
-    <section id="contact" className="py-32 lg:py-40 bg-[hsl(220,20%,15%)]">
+    <section id="contact" className="py-32 lg:py-40 bg-[hsl(224,58%,16%)]">
       <div className="mx-auto max-w-3xl px-6 text-center">
         <h2 className="text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl">
           {t.title}
         </h2>
-        <p className="mt-6 text-pretty text-lg text-[hsl(220,15%,60%)]">
+        <p className="mt-6 text-pretty text-lg text-[hsl(224,30%,65%)]">
           {t.description}
         </p>
         <div className="mt-10">
@@ -25,7 +25,7 @@ export function ContactSection({ locale }: { locale: Locale }) {
             {t.cta}
           </a>
         </div>
-        <p className="mt-6 text-sm text-[hsl(220,15%,60%)]">{t.email}</p>
+        <p className="mt-6 text-sm text-[hsl(224,30%,65%)]">{t.email}</p>
       </div>
     </section>
   )

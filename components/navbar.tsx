@@ -48,6 +48,7 @@ export function Navbar({ locale, onLocaleChange, activePage = "home" }: NavbarPr
               width={240}
               height={60}
               style={{ width: 240, height: "auto" }}
+              unoptimized
               priority
             />
           </Link>

@@ -45,9 +45,9 @@ export function Navbar({ locale, onLocaleChange, activePage = "home" }: NavbarPr
             <Image
               src="/images/haven-wordmark-sapphire.png"
               alt="Haven AI Partners"
-              width={160}
-              height={40}
-              style={{ width: 160, height: "auto" }}
+              width={200}
+              height={50}
+              style={{ width: 200, height: "auto" }}
               priority
             />
           </Link>

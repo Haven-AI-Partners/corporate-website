@@ -90,7 +90,7 @@ export function Navbar({ locale, onLocaleChange, activePage = "home" }: NavbarPr
             </button>
 
             <a
-              href="#contact"
+              href="/#contact"
               className="inline-flex items-center rounded-full bg-primary px-6 py-2 text-sm font-medium text-primary-foreground transition-all hover:brightness-110"
             >
               {content[locale].hero.cta}
@@ -142,7 +142,7 @@ export function Navbar({ locale, onLocaleChange, activePage = "home" }: NavbarPr
               </Link>
             ))}
             <a
-              href="#contact"
+              href="/#contact"
               onClick={() => setIsMobileOpen(false)}
               className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-2 text-sm font-medium text-primary-foreground transition-all hover:brightness-110 mt-2"
             >

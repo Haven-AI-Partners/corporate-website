@@ -15,24 +15,13 @@ export function HeroSection({ locale }: { locale: Locale }) {
       />
 
       <div className="relative mx-auto w-full max-w-7xl px-6 lg:px-8">
-        <div className="max-w-3xl">
-          <p className="mb-6 text-sm font-normal uppercase tracking-[0.25em] text-primary">
+        <div className="max-w-4xl">
+          <h1 className="text-balance text-5xl font-bold tracking-tight text-primary sm:text-6xl lg:text-7xl">
             {t.tagline}
-          </p>
-          <h1 className="text-balance text-4xl font-light tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-            {t.title}
           </h1>
-          <p className="mt-8 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
+          <p className="mt-10 max-w-3xl text-pretty text-base leading-relaxed text-primary/80">
             {t.subtitle}
           </p>
-          <div className="mt-10">
-            <a
-              href="#contact"
-              className="inline-flex items-center rounded-full bg-primary px-10 py-4 text-sm font-medium text-primary-foreground transition-all hover:brightness-110"
-            >
-              {t.cta}
-            </a>
-          </div>
         </div>
       </div>
     </section>

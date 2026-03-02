@@ -18,16 +18,16 @@ export function ValuesSection({ locale }: { locale: Locale }) {
           </h2>
         </div>
 
-        <div className="mt-16 flex flex-col gap-6 max-w-3xl mx-auto">
+        <div className="mt-16 grid grid-cols-2 gap-6 md:grid-cols-5">
           {t.items.map((item, i) => (
             <div
               key={i}
-              className="py-4"
+              className="rounded-2xl bg-secondary/40 p-6"
             >
-              <p className="text-lg font-medium text-foreground">
+              <p className="text-sm font-medium text-foreground">
                 {item.en}
               </p>
-              <p className="mt-2 text-base text-muted-foreground">
+              <p className="mt-2 text-xs text-muted-foreground">
                 {item.ja}
               </p>
             </div>

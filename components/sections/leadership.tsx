@@ -59,7 +59,7 @@ export function LeadershipSection({ locale }: { locale: Locale }) {
                 <p className="mt-2 text-sm font-medium text-primary">
                   {member.role}
                 </p>
-                <p className="mt-4 text-pretty text-sm leading-relaxed text-muted-foreground">
+                <p className="mt-4 text-pretty text-base leading-relaxed text-muted-foreground">
                   {member.bio}
                 </p>
               </div>

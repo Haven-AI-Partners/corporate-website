@@ -50,7 +50,7 @@ export default function NewsPage() {
                 className="group border-b border-border pb-8 last:border-0"
               >
                 <p className="text-sm text-muted-foreground">{item.date}</p>
-                <h2 className="mt-2 text-xl font-semibold text-foreground">
+                <h2 className="mt-2 text-2xl font-semibold text-foreground">
                   {item.title}
                 </h2>
                 <p className="mt-3 text-base leading-relaxed text-muted-foreground">

@@ -33,7 +33,7 @@ export function Footer({ locale }: { locale: Locale }) {
           <div className="flex flex-col items-start gap-8 md:flex-row md:justify-between md:items-center">
             <div>
               <Image
-                src="/haven-logo.png"
+                src="/images/haven-wordmark-sapphire.png"
                 alt="Haven AI Partners"
                 width={280}
                 height={70}

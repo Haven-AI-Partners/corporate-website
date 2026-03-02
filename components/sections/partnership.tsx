@@ -40,17 +40,17 @@ export function PartnershipSection({ locale }: { locale: Locale }) {
               <div key={step.number}>
                 <div className="rounded-2xl bg-secondary/30 p-8 h-full">
                   <div className="mb-4">
-                    <span className="text-4xl font-extralight text-primary/30">
+                    <span className="text-5xl font-extralight text-primary/30">
                       {step.number}
                     </span>
                   </div>
-                  <h3 className="text-base font-medium text-foreground">
+                  <h3 className="text-xl font-medium text-foreground">
                     {step.title}
                   </h3>
-                  <p className="text-xs text-muted-foreground mt-1">
+                  <p className="text-sm text-muted-foreground mt-1">
                     {step.subtitle}
                   </p>
-                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                  <p className="mt-4 text-base leading-relaxed text-muted-foreground">
                     {step.description}
                   </p>
                 </div>

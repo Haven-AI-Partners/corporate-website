@@ -30,13 +30,13 @@ export function ApproachSection({ locale }: { locale: Locale }) {
               <span className="text-5xl font-extralight leading-none text-primary/20">
                 {pillar.number}
               </span>
-              <h3 className="mt-4 text-base font-medium text-foreground">
+              <h3 className="mt-4 text-xl font-medium text-foreground">
                 {pillar.title}
               </h3>
-              <p className="mt-1 text-xs text-primary/70">
+              <p className="mt-1 text-sm text-primary/70">
                 {pillar.subtitle}
               </p>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-3 text-base leading-relaxed text-muted-foreground">
                 {pillar.description}
               </p>
             </div>

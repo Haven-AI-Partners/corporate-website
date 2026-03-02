@@ -18,7 +18,7 @@ export function ContactSection({ locale }: { locale: Locale }) {
             <h2 className="text-3xl font-light tracking-tight text-white sm:text-4xl">
               {t.title}
             </h2>
-            <p className="mt-6 text-pretty text-base leading-relaxed text-white/70">
+            <p className="mt-6 text-pretty text-lg leading-relaxed text-white/70">
               {t.description}
             </p>
             <a

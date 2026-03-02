@@ -1,7 +1,6 @@
 "use client"
 
 import Image from "next/image"
-import { Linkedin } from "lucide-react"
 import type { Locale } from "@/lib/content"
 import { content } from "@/lib/content"
 
@@ -23,77 +22,35 @@ export function LeadershipSection({ locale }: { locale: Locale }) {
           </p>
         </div>
 
-        <div className="mt-16 grid gap-6 md:grid-cols-3">
+        <div className="mt-16 grid gap-8 md:grid-cols-3">
           {t.members.map((member) => (
             <div
               key={member.name}
-              className="rounded-2xl bg-white p-8"
+              className="rounded-2xl bg-white overflow-hidden"
             >
-              <div className="flex items-start gap-4 mb-4">
-                <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-full border-2 border-primary/20">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    fill
-                    className="object-cover"
-                    sizes="64px"
-                  />
-                </div>
-                <div className="flex-1 pt-1">
-                  <div className="flex items-center gap-2">
-                    <div>
-                      {"nameJa" in member && member.nameJa && (
-                        <p className="text-base font-semibold text-foreground">
-                          {member.nameJa}
-                        </p>
-                      )}
-                      <h3 className="text-lg font-semibold text-foreground">
-                        {member.name}
-                      </h3>
-                    </div>
-                    <a
-                      href={member.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary hover:text-primary/80 transition-colors"
-                      aria-label={`${member.name} LinkedIn`}
-                    >
-                      <Linkedin className="h-5 w-5" />
-                    </a>
-                  </div>
-                  <p className="mt-1 text-sm font-medium text-primary">
-                    {member.role}
-                  </p>
-                </div>
+              {/* Large portrait photo */}
+              <div className="relative aspect-[3/4] w-full">
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
               </div>
-              <p className="text-pretty text-xs leading-relaxed text-muted-foreground/80 mb-6">
-                {member.memberSubtitle}
-              </p>
-              <p className="text-pretty text-sm leading-relaxed text-muted-foreground">
-                {member.bio}
-              </p>
-              {member.education && (
-                <p className="mt-4 text-sm font-medium text-foreground/80">
-                  {member.education}
+
+              {/* Text content */}
+              <div className="p-8">
+                <h3 className="text-2xl font-light text-foreground">
+                  {member.name}
+                </h3>
+                <p className="mt-2 text-sm font-medium text-primary">
+                  {member.role}
                 </p>
-              )}
-              {member.skills && member.skills.length > 0 && (
-                <div className="mt-6 flex flex-wrap gap-2">
-                  {member.skills.map((skill) => (
-                    <div
-                      key={skill.title}
-                      className="rounded-full bg-primary/5 px-4 py-2"
-                    >
-                      <p className="text-xs font-semibold text-primary">
-                        {skill.title}
-                      </p>
-                      <p className="text-xs text-muted-foreground mt-0.5">
-                        {skill.description}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              )}
+                <p className="mt-4 text-pretty text-sm leading-relaxed text-muted-foreground">
+                  {member.bio}
+                </p>
+              </div>
             </div>
           ))}
         </div>

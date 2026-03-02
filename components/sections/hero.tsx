@@ -15,7 +15,7 @@ export function HeroSection({ locale }: { locale: Locale }) {
       />
 
       <div className="relative mx-auto w-full max-w-[1440px] px-6 lg:px-8">
-        <div>
+        <div className="lg:pl-16">
           <h1 className="whitespace-nowrap text-4xl font-bold tracking-tight text-primary sm:text-5xl lg:text-6xl">
             {t.tagline}
           </h1>

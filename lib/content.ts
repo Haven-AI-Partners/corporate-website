@@ -70,7 +70,7 @@ export const content = {
             "投資銀行 ×グローバル企業 ×ヘルスケアで磨いた成長と再生のプロフェッショナル",
           bio: "ゴールドマン・サックス証券で投資銀行業務に従事後、The Estée Lauder Companies NY本社にてFinance & Strategyチームのディレクター職に就任し、同社の成長戦略、再生事業に参画。その後はオンライン診療事業のeLife株式会社にCEOとして参画して組織の黒字化・成長拡大を牽引。新規事業の創出から成長戦略の立案、オペレーションの確立まで幅広い実績を持つ。",
           education: "東京大学経済学部卒、コロンビア大学経営大学院修了",
-          image: "/images/yamada-yuta.png",
+          image: "/images/yamada-yuta.jpg",
           linkedin: "https://www.linkedin.com/in/yuta-yamada-659941129",
           skills: [
             {
@@ -94,7 +94,7 @@ export const content = {
             "IT投資家を経て、日本で30店舗超の飲食店を育て上げた実業を知る創業者",
           bio: "机上で動く投資家ではなく、ドイツ料理店『Schmatz』を日本で創業し、ゼロから30店舗以上、数百名の従業員を抱える企業へと育て上げた実業家。日本の商習慣、採用の難しさ、店舗運営の泥臭さ。だからこそ、「日本の事業に海外発の最新技術があれば、世界で勝てる」と本気で信じています。2024年の創業から、既に4社の立ち上げを経験。",
           education: "",
-          image: "/images/ax-chris.png",
+          image: "/images/ax-chris.jpg",
           linkedin: "https://www.linkedin.com/in/christopher-ax-65ba8451/",
           skills: [
             {
@@ -440,7 +440,7 @@ export const content = {
           bio: "After investment banking at Goldman Sachs, served as Director of Finance & Strategy at The Estée Lauder Companies NY headquarters, contributing to growth strategy and business transformation. Most recently joined eLife Inc. as CEO, leading the organization to profitability and growth. Extensive experience spanning new business creation, growth strategy, and operational excellence.",
           education:
             "B.A. Economics, University of Tokyo; MBA, Columbia Business School",
-          image: "/images/yamada-yuta.png",
+          image: "/images/yamada-yuta.jpg",
           linkedin: "https://www.linkedin.com/in/yuta-yamada-659941129",
           skills: [
             {
@@ -464,7 +464,7 @@ export const content = {
             "From IT investor to hands-on founder who built 30+ restaurant locations in Japan",
           bio: "Not a desk-bound investor, but a hands-on entrepreneur who founded German restaurant 'Schmatz' in Japan, growing it from zero to 30+ locations with hundreds of employees. He understands Japanese business customs, hiring challenges, and the grit of operations firsthand. That's why he truly believes that 'Japanese businesses can win globally with cutting-edge technology from abroad.' Since founding in 2024, he has already launched 4 companies.",
           education: "",
-          image: "/images/ax-chris.png",
+          image: "/images/ax-chris.jpg",
           linkedin: "https://www.linkedin.com/in/christopher-ax-65ba8451/",
           skills: [
             {

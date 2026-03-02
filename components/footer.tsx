@@ -22,9 +22,6 @@ export function Footer({ locale }: { locale: Locale }) {
                 height={70}
                 style={{ width: 280, height: "auto" }}
               />
-              <p className="mt-1 text-xs text-muted-foreground">
-                {t.confidential}
-              </p>
             </div>
 
             <nav aria-label="Footer navigation">

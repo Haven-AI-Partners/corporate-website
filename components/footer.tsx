@@ -12,8 +12,8 @@ export function Footer({ locale }: { locale: Locale }) {
   return (
     <footer className="border-t border-border bg-white">
       <div>
-        <div className="mx-auto max-w-[1440px] px-6 lg:px-8 py-8">
-          <div className="flex flex-col items-start gap-8 md:flex-row md:justify-between md:items-center">
+        <div className="mx-auto max-w-[1440px] px-6 lg:px-8 py-4">
+          <div className="flex flex-col items-start gap-4 md:flex-row md:justify-between md:items-center">
             <div>
               <Image
                 src="/images/haven-complete-logo-sapphire.png"
@@ -59,7 +59,7 @@ export function Footer({ locale }: { locale: Locale }) {
             </a>
           </div>
 
-          <div className="mt-8 border-t border-border pt-8 text-center">
+          <div className="mt-4 border-t border-border pt-4 text-center">
             <p className="text-xs text-muted-foreground">
               &copy; {new Date().getFullYear()} {t.copyright}
             </p>

@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { useLocale } from "@/hooks/use-locale"
 import { Navbar } from "@/components/navbar"
+import { ContactSection } from "@/components/sections/contact"
 import { Footer } from "@/components/footer"
 import { content } from "@/lib/content"
 
@@ -61,6 +62,7 @@ export default function NewsPage() {
           </div>
         </div>
       </div>
+      <ContactSection locale={locale} />
       <Footer locale={locale} />
     </main>
   )

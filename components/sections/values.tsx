@@ -22,7 +22,7 @@ export function ValuesSection({ locale }: { locale: Locale }) {
           {t.items.map((item, i) => (
             <div
               key={i}
-              className="rounded-2xl bg-secondary/40 p-10 min-h-[280px] flex flex-col justify-center"
+              className="rounded-2xl bg-secondary/40 p-10 min-h-[500px] flex flex-col justify-center"
             >
               <p className="text-lg font-medium text-foreground lg:text-xl">
                 {item.en}

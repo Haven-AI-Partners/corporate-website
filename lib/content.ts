@@ -88,6 +88,30 @@ export const content = {
           ],
         },
         {
+          name: "Alexandre Balon-Perin",
+          role: "Head of Engineering",
+          memberSubtitle:
+            "ベルギー出身。日本のテック業界で10年以上の経験を持つテクノロジーエグゼクティブ",
+          bio: "PanalytでCTOとして5年間、技術組織の成長とイノベーションを推進。PaidyやGilt Groupeでエンジニアリングチームのスケーリングとプラットフォーム構築を主導。AI・コンピューテーショナルインテリジェンスの知見を活かし、データドリブンな戦略で事業価値を創出。",
+          education: "ブリュッセル自由大学(ULB) 工学士; ULB/NTNUコンピューテーショナル・インテリジェンス修士",
+          image: "/images/balon-perin-alexandre.jpg",
+          linkedin: "https://www.linkedin.com/in/abalonperin/",
+          skills: [
+            {
+              title: "エンジニアリングリーダーシップ",
+              description: "Panalyt CTO、Paidy Head of Engineering歴任",
+            },
+            {
+              title: "AI・データ戦略",
+              description: "コンピューテーショナル・インテリジェンス専攻 (NTNU)",
+            },
+            {
+              title: "日本テック業界の知見",
+              description: "日本のテック業界で10年以上のリーダーシップ経験",
+            },
+          ],
+        },
+        {
           name: "Christopher Ax",
           role: "WAY Equity Partners 創業者・最高経営責任者",
           memberSubtitle:
@@ -108,30 +132,6 @@ export const content = {
             {
               title: "従業員数百名超のマネジメント",
               description: "大規模組織の運営経験",
-            },
-          ],
-        },
-        {
-          name: "Alexandre Balon-Perin",
-          role: "Chief Technology Officer",
-          memberSubtitle:
-            "ベルギー出身。日本のテック業界で10年以上の経験を持つテクノロジーエグゼクティブ",
-          bio: "PanalytでCTOとして5年間、技術組織の成長とイノベーションを推進。PaidyやGilt Groupeでエンジニアリングチームのスケーリングとプラットフォーム構築を主導。AI・コンピューテーショナルインテリジェンスの知見を活かし、データドリブンな戦略で事業価値を創出。",
-          education: "ブリュッセル自由大学(ULB) 工学士; ULB/NTNUコンピューテーショナル・インテリジェンス修士",
-          image: "/images/balon-perin-alexandre.jpg",
-          linkedin: "https://www.linkedin.com/in/abalonperin/",
-          skills: [
-            {
-              title: "エンジニアリングリーダーシップ",
-              description: "Panalyt CTO、Paidy Head of Engineering歴任",
-            },
-            {
-              title: "AI・データ戦略",
-              description: "コンピューテーショナル・インテリジェンス専攻 (NTNU)",
-            },
-            {
-              title: "日本テック業界の知見",
-              description: "日本のテック業界で10年以上のリーダーシップ経験",
             },
           ],
         },
@@ -458,6 +458,31 @@ export const content = {
           ],
         },
         {
+          name: "Alexandre Balon-Perin",
+          role: "Head of Engineering",
+          memberSubtitle:
+            "Originally from Belgium, a technology executive with over a decade of experience in the Japanese tech sector",
+          bio: "Served as CTO at Panalyt for five years, driving growth and technical innovation. Previously led engineering teams at Paidy and Gilt Groupe, scaling platforms and multi-disciplinary teams. Applies his AI and Computational Intelligence background to data-driven strategies for operational excellence.",
+          education:
+            "B.S. Engineering, ULB; M.S. Computational Intelligence, ULB/NTNU",
+          image: "/images/balon-perin-alexandre.jpg",
+          linkedin: "https://www.linkedin.com/in/abalonperin/",
+          skills: [
+            {
+              title: "Engineering Leadership",
+              description: "Former CTO at Panalyt & Head of Engineering at Paidy",
+            },
+            {
+              title: "AI & Data Strategy",
+              description: "Specialized in Computational Intelligence (NTNU)",
+            },
+            {
+              title: "Japan Tech Expertise",
+              description: "Over a decade of leadership in the Japanese tech landscape",
+            },
+          ],
+        },
+        {
           name: "Christopher Ax",
           role: "Founder & CEO, WAY Equity Partners",
           memberSubtitle:
@@ -478,31 +503,6 @@ export const content = {
             {
               title: "Hundreds of Employees",
               description: "Large-scale organization management",
-            },
-          ],
-        },
-        {
-          name: "Alexandre Balon-Perin",
-          role: "Chief Technology Officer",
-          memberSubtitle:
-            "Originally from Belgium, a technology executive with over a decade of experience in the Japanese tech sector",
-          bio: "Served as CTO at Panalyt for five years, driving growth and technical innovation. Previously led engineering teams at Paidy and Gilt Groupe, scaling platforms and multi-disciplinary teams. Applies his AI and Computational Intelligence background to data-driven strategies for operational excellence.",
-          education:
-            "B.S. Engineering, ULB; M.S. Computational Intelligence, ULB/NTNU",
-          image: "/images/balon-perin-alexandre.jpg",
-          linkedin: "https://www.linkedin.com/in/abalonperin/",
-          skills: [
-            {
-              title: "Engineering Leadership",
-              description: "Former CTO at Panalyt & Head of Engineering at Paidy",
-            },
-            {
-              title: "AI & Data Strategy",
-              description: "Specialized in Computational Intelligence (NTNU)",
-            },
-            {
-              title: "Japan Tech Expertise",
-              description: "Over a decade of leadership in the Japanese tech landscape",
             },
           ],
         },

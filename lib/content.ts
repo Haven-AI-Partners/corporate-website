@@ -347,6 +347,10 @@ export const content = {
     footer: {
       copyright: "Haven AI Partners株式会社. All rights reserved.",
       confidential: "Proprietary & Confidential",
+      newsletter: {
+        placeholder: "メールアドレス",
+        cta: "登録",
+      },
     },
     langSwitch: "EN",
   },
@@ -711,6 +715,10 @@ export const content = {
     footer: {
       copyright: "Haven AI Partners Co., Ltd. All rights reserved.",
       confidential: "Proprietary & Confidential",
+      newsletter: {
+        placeholder: "Email Address",
+        cta: "Sign Up",
+      },
     },
     langSwitch: "JP",
   },

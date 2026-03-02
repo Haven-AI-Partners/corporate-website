@@ -36,10 +36,10 @@ export default function NewsPage() {
       <Navbar locale={locale} onLocaleChange={setLocale} activePage="news" />
       <div className="min-h-screen bg-background pt-32 pb-20">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary">
+          <p className="text-sm font-normal uppercase tracking-[0.25em] text-primary">
             {content[locale].nav.news}
           </p>
-          <h1 className="mt-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          <h1 className="mt-4 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
             {locale === "ja" ? "お知らせ・プレスリリース" : "News & Press Releases"}
           </h1>
 

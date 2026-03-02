@@ -7,13 +7,13 @@ export function ValuesSection({ locale }: { locale: Locale }) {
   const t = content[locale].values
 
   return (
-    <section id="values" className="py-24 lg:py-32">
+    <section id="values" className="py-32 lg:py-40">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="text-center">
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary">
+          <p className="text-sm font-normal uppercase tracking-[0.25em] text-primary">
             {t.label}
           </p>
-          <h2 className="mt-4 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          <h2 className="mt-4 text-balance text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
             {t.title}
           </h2>
         </div>
@@ -24,7 +24,7 @@ export function ValuesSection({ locale }: { locale: Locale }) {
               key={i}
               className="py-4"
             >
-              <p className="text-lg font-semibold text-primary">
+              <p className="text-lg font-medium text-foreground">
                 {item.en}
               </p>
               <p className="mt-2 text-base text-muted-foreground">

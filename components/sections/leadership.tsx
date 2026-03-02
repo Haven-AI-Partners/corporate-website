@@ -9,13 +9,13 @@ export function LeadershipSection({ locale }: { locale: Locale }) {
   const t = content[locale].leadership
 
   return (
-    <section id="leadership" className="py-24 lg:py-32 bg-secondary/50">
+    <section id="leadership" className="py-32 lg:py-40 bg-secondary/30">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="text-center">
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary">
+          <p className="text-sm font-normal uppercase tracking-[0.25em] text-primary">
             {t.label}
           </p>
-          <h2 className="mt-4 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          <h2 className="mt-4 text-balance text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
             {t.title}
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg text-muted-foreground">
@@ -27,7 +27,7 @@ export function LeadershipSection({ locale }: { locale: Locale }) {
           {t.members.map((member) => (
             <div
               key={member.name}
-              className="rounded-xl border border-border bg-card p-6 shadow-sm"
+              className="rounded-2xl bg-white p-8"
             >
               <div className="flex items-start gap-4 mb-4">
                 <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-full border-2 border-primary/20">
@@ -82,7 +82,7 @@ export function LeadershipSection({ locale }: { locale: Locale }) {
                   {member.skills.map((skill) => (
                     <div
                       key={skill.title}
-                      className="rounded-lg bg-primary/5 border border-primary/10 px-3 py-2"
+                      className="rounded-full bg-primary/5 px-4 py-2"
                     >
                       <p className="text-xs font-semibold text-primary">
                         {skill.title}

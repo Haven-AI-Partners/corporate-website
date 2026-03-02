@@ -7,13 +7,13 @@ export function ApproachSection({ locale }: { locale: Locale }) {
   const t = content[locale].approach
 
   return (
-    <section id="approach" className="py-24 lg:py-32 bg-secondary/50">
+    <section id="approach" className="py-32 lg:py-40 bg-secondary/30">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="max-w-3xl">
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary">
+          <p className="text-sm font-normal uppercase tracking-[0.25em] text-primary">
             {t.label}
           </p>
-          <h2 className="mt-4 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          <h2 className="mt-4 text-balance text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
             {t.title}
           </h2>
           <p className="mt-6 text-pretty text-lg text-muted-foreground">
@@ -25,12 +25,12 @@ export function ApproachSection({ locale }: { locale: Locale }) {
           {t.pillars.map((pillar) => (
             <div
               key={pillar.title}
-              className="group rounded-xl border border-border bg-card p-6 shadow-sm transition-all hover:border-primary/40 hover:shadow-md"
+              className="p-8"
             >
-              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary text-lg font-bold">
+              <span className="text-5xl font-extralight leading-none text-primary/20">
                 {pillar.number}
-              </div>
-              <h3 className="text-base font-semibold text-foreground">
+              </span>
+              <h3 className="mt-4 text-base font-medium text-foreground">
                 {pillar.title}
               </h3>
               <p className="mt-1 text-xs text-primary/70">

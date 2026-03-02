@@ -22,12 +22,12 @@ export function ValuesSection({ locale }: { locale: Locale }) {
           {t.items.map((item, i) => (
             <div
               key={i}
-              className="rounded-2xl bg-secondary/40 p-6"
+              className="rounded-2xl bg-secondary/40 p-8 min-h-[200px] flex flex-col justify-center"
             >
-              <p className="text-sm font-medium text-foreground">
+              <p className="text-base font-medium text-foreground">
                 {item.en}
               </p>
-              <p className="mt-2 text-xs text-muted-foreground">
+              <p className="mt-3 text-sm text-muted-foreground">
                 {item.ja}
               </p>
             </div>

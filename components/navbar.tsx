@@ -42,13 +42,11 @@ export function Navbar({ locale, onLocaleChange, activePage = "home" }: NavbarPr
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           <Link href="/">
-            <Image
-              src="/images/haven-wordmark-sapphire.png"
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/haven-logo.svg"
               alt="Haven AI Partners"
-              width={280}
-              height={70}
-              style={{ width: 280, height: "auto" }}
-              priority
+              className="h-10"
             />
           </Link>
 

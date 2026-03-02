@@ -14,7 +14,7 @@ export function HeroSection({ locale }: { locale: Locale }) {
         style={{ backgroundImage: "url('/images/hero-water.jpg')" }}
       />
 
-      <div className="relative mx-auto w-full max-w-7xl px-6 lg:px-8">
+      <div className="relative mx-auto w-full max-w-[1440px] px-6 lg:px-8">
         <div>
           <h1 className="whitespace-nowrap text-4xl font-bold tracking-tight text-primary sm:text-5xl lg:text-6xl">
             {t.tagline}

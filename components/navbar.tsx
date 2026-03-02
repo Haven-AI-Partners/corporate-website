@@ -39,8 +39,8 @@ export function Navbar({ locale, onLocaleChange, activePage = "home" }: NavbarPr
           : "bg-transparent"
       }`}
     >
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="flex h-20 items-center justify-between">
+      <div className="mx-auto max-w-[1440px] px-6 lg:px-8">
+        <div className="flex h-24 items-center justify-between">
           <Link href="/">
             <Image
               src="/images/haven-wordmark-sapphire.png"
@@ -126,7 +126,7 @@ export function Navbar({ locale, onLocaleChange, activePage = "home" }: NavbarPr
       {/* Mobile nav */}
       {isMobileOpen && (
         <div className="lg:hidden bg-white/98 backdrop-blur-md border-b border-border/50">
-          <div className="mx-auto max-w-7xl px-6 py-4 flex flex-col gap-3">
+          <div className="mx-auto max-w-[1440px] px-6 py-4 flex flex-col gap-3">
             {navItems.map((item) => (
               <Link
                 key={item.key}

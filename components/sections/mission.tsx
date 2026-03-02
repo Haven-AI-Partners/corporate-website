@@ -8,7 +8,7 @@ export function MissionSection({ locale }: { locale: Locale }) {
 
   return (
     <section id="mission" className="py-32 lg:py-40 bg-secondary/30">
-      <div className="mx-auto max-w-5xl px-6 text-center">
+      <div className="mx-auto max-w-6xl px-6 text-center">
         <p className="text-sm font-normal uppercase tracking-[0.25em] text-primary">
           {t.label}
         </p>

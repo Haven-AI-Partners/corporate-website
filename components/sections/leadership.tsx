@@ -10,7 +10,7 @@ export function LeadershipSection({ locale }: { locale: Locale }) {
 
   return (
     <section id="leadership" className="py-32 lg:py-40 bg-secondary/30">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-[1440px] px-6 lg:px-8">
         <div className="text-center">
           <p className="text-sm font-normal uppercase tracking-[0.25em] text-primary">
             {t.label}

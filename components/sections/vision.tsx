@@ -11,7 +11,7 @@ export function VisionSection({ locale }: { locale: Locale }) {
 
   return (
     <section id="vision" className="py-32 lg:py-40">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-[1440px] px-6 lg:px-8">
         <div className="text-center">
           <p className="text-sm font-normal uppercase tracking-[0.25em] text-primary">
             {t.label}
@@ -30,13 +30,13 @@ export function VisionSection({ locale }: { locale: Locale }) {
             return (
               <div
                 key={pillar.title}
-                className="rounded-2xl bg-secondary/40 p-10 transition-colors hover:bg-secondary/60"
+                className="rounded-2xl bg-secondary/40 p-14 min-h-[300px] flex flex-col justify-center transition-colors hover:bg-secondary/60"
               >
-                <Icon className="h-8 w-8 text-primary mb-6" />
-                <h3 className="text-lg font-medium text-foreground">
+                <Icon className="h-12 w-12 text-primary mb-8" />
+                <h3 className="text-2xl font-medium text-foreground">
                   {pillar.title}
                 </h3>
-                <p className="mt-4 text-pretty text-sm leading-relaxed text-muted-foreground">
+                <p className="mt-4 text-pretty text-base leading-relaxed text-muted-foreground lg:text-lg">
                   {pillar.description}
                 </p>
               </div>

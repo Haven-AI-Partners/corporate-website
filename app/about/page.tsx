@@ -12,7 +12,7 @@ export default function AboutPage() {
   return (
     <main>
       <Navbar locale={locale} onLocaleChange={setLocale} activePage="about" />
-      <div className="pt-16" />
+      <div className="pt-24" />
       <AboutSection locale={locale} />
       <ContactSection locale={locale} />
       <Footer locale={locale} />

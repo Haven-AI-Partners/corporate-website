@@ -30,7 +30,7 @@ export function VisionSection({ locale }: { locale: Locale }) {
             return (
               <div
                 key={pillar.title}
-                className="rounded-2xl bg-secondary/40 p-14 min-h-[300px] flex flex-col justify-center transition-colors hover:bg-secondary/60"
+                className="rounded-2xl bg-secondary/40 p-14 min-h-[500px] flex flex-col justify-center transition-colors hover:bg-secondary/60"
               >
                 <Icon className="h-12 w-12 text-primary mb-8" />
                 <h3 className="text-2xl font-medium text-foreground">

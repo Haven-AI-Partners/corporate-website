@@ -12,7 +12,7 @@ export default function LeadershipPage() {
   return (
     <main>
       <Navbar locale={locale} onLocaleChange={setLocale} activePage="leadership" />
-      <div className="pt-16" />
+      <div className="pt-24" />
       <LeadershipSection locale={locale} />
       <ValuesSection locale={locale} />
       <Footer locale={locale} />

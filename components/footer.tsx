@@ -30,7 +30,7 @@ export function Footer({ locale }: { locale: Locale }) {
 
       <div className="border-t border-border">
         <div className="mx-auto max-w-[1440px] px-6 lg:px-8 py-8">
-          <div className="flex flex-col items-center gap-8 md:flex-row md:justify-between">
+          <div className="flex flex-col items-start gap-8 md:flex-row md:justify-between md:items-center">
             <div>
               <Image
                 src="/haven-logo.png"

@@ -16,11 +16,11 @@ export function Footer({ locale }: { locale: Locale }) {
           <div className="flex flex-col items-start gap-8 md:flex-row md:justify-between md:items-center">
             <div>
               <Image
-                src="/images/haven-wordmark-sapphire.png"
+                src="/images/haven-complete-logo-sapphire.png"
                 alt="Haven AI Partners"
-                width={280}
-                height={70}
-                style={{ width: 280, height: "auto" }}
+                width={200}
+                height={106}
+                style={{ width: 200, height: "auto" }}
               />
             </div>
 

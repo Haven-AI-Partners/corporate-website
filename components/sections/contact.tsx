@@ -29,9 +29,17 @@ export function ContactSection({ locale }: { locale: Locale }) {
           {/* Right column - form */}
           <div>
             <form
-              action={`mailto:${t.email}`}
-              method="POST"
-              encType="text/plain"
+              onSubmit={(e) => {
+                e.preventDefault()
+                const form = e.currentTarget
+                const data = new FormData(form)
+                const name = `${data.get("firstName") ?? ""} ${data.get("lastName") ?? ""}`.trim()
+                const email = data.get("email") ?? ""
+                const message = data.get("message") ?? ""
+                const subject = encodeURIComponent(`Contact from ${name}`)
+                const body = encodeURIComponent(`From: ${name} (${email})\n\n${message}`)
+                window.location.href = `mailto:${t.email}?subject=${subject}&body=${body}`
+              }}
               className="flex flex-col gap-6"
             >
               {/* Name row */}
@@ -45,6 +53,7 @@ export function ContactSection({ locale }: { locale: Locale }) {
                     </label>
                     <input
                       type="text"
+                      name="firstName"
                       required
                       className="mt-1 w-full rounded-lg border-0 bg-white px-4 py-3 text-sm text-foreground outline-none ring-1 ring-transparent focus:ring-primary/30 transition-shadow"
                     />
@@ -56,6 +65,7 @@ export function ContactSection({ locale }: { locale: Locale }) {
                     </label>
                     <input
                       type="text"
+                      name="lastName"
                       required
                       className="mt-1 w-full rounded-lg border-0 bg-white px-4 py-3 text-sm text-foreground outline-none ring-1 ring-transparent focus:ring-primary/30 transition-shadow"
                     />
@@ -71,6 +81,7 @@ export function ContactSection({ locale }: { locale: Locale }) {
                 </label>
                 <input
                   type="email"
+                  name="email"
                   required
                   className="mt-2 w-full rounded-lg border-0 bg-white px-4 py-3 text-sm text-foreground outline-none ring-1 ring-transparent focus:ring-primary/30 transition-shadow"
                 />
@@ -83,6 +94,7 @@ export function ContactSection({ locale }: { locale: Locale }) {
                   <span className="text-xs font-normal text-muted-foreground/60">({t.form.required})</span>
                 </label>
                 <textarea
+                  name="message"
                   required
                   rows={5}
                   className="mt-2 w-full rounded-lg border-0 bg-white px-4 py-3 text-sm text-foreground outline-none ring-1 ring-transparent focus:ring-primary/30 transition-shadow resize-y"

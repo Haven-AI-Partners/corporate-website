@@ -29,7 +29,7 @@ export function LeadershipSection({ locale }: { locale: Locale }) {
               className="rounded-2xl bg-white overflow-hidden"
             >
               {/* Large portrait photo */}
-              <div className="relative aspect-[3/4] w-full">
+              <div className="relative aspect-[4/4] w-full">
                 <Image
                   src={member.image}
                   alt={member.name}

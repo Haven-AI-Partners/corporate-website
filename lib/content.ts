@@ -351,6 +351,9 @@ export const content = {
         message: "メッセージ",
         required: "必須",
         submit: "送信",
+        sending: "送信中...",
+        success: "お問い合わせありがとうございます。担当者より折り返しご連絡いたします。",
+        error: "送信に失敗しました。もう一度お試しください。",
       },
     },
     footer: {
@@ -728,6 +731,9 @@ export const content = {
         message: "Message",
         required: "required",
         submit: "Submit",
+        sending: "Sending...",
+        success: "Thank you for your message. We'll be in touch soon.",
+        error: "Something went wrong. Please try again.",
       },
     },
     footer: {

@@ -1,10 +1,13 @@
 "use client"
 
+import { useActionState } from "react"
+import { submitContactForm } from "@/app/actions/contact"
 import type { Locale } from "@/lib/content"
 import { content } from "@/lib/content"
 
 export function ContactSection({ locale }: { locale: Locale }) {
   const t = content[locale].contact
+  const [state, formAction, isPending] = useActionState(submitContactForm, null)
 
   return (
     <section id="contact" className="py-32 lg:py-40 bg-secondary/30">
@@ -28,89 +31,88 @@ export function ContactSection({ locale }: { locale: Locale }) {
 
           {/* Right column - form */}
           <div>
-            <form
-              onSubmit={(e) => {
-                e.preventDefault()
-                const form = e.currentTarget
-                const data = new FormData(form)
-                const name = `${data.get("firstName") ?? ""} ${data.get("lastName") ?? ""}`.trim()
-                const email = data.get("email") ?? ""
-                const message = data.get("message") ?? ""
-                const subject = encodeURIComponent(`Contact from ${name}`)
-                const body = encodeURIComponent(`From: ${name} (${email})\n\n${message}`)
-                window.location.href = `mailto:${t.email}?subject=${subject}&body=${body}`
-              }}
-              className="flex flex-col gap-6"
-            >
-              {/* Name row */}
-              <div>
-                <p className="text-sm font-medium text-foreground">{t.form.name}</p>
-                <div className="mt-2 grid grid-cols-2 gap-4">
-                  <div>
-                    <label className="text-xs text-muted-foreground">
-                      {t.form.firstName}{" "}
-                      <span className="text-muted-foreground/60">({t.form.required})</span>
-                    </label>
-                    <input
-                      type="text"
-                      name="firstName"
-                      required
-                      className="mt-1 w-full rounded-lg border-0 bg-white px-4 py-3 text-sm text-foreground outline-none ring-1 ring-transparent focus:ring-primary/30 transition-shadow"
-                    />
-                  </div>
-                  <div>
-                    <label className="text-xs text-muted-foreground">
-                      {t.form.lastName}{" "}
-                      <span className="text-muted-foreground/60">({t.form.required})</span>
-                    </label>
-                    <input
-                      type="text"
-                      name="lastName"
-                      required
-                      className="mt-1 w-full rounded-lg border-0 bg-white px-4 py-3 text-sm text-foreground outline-none ring-1 ring-transparent focus:ring-primary/30 transition-shadow"
-                    />
+            {state?.success ? (
+              <div className="flex items-center justify-center rounded-2xl bg-white p-12 text-center">
+                <p className="text-lg text-foreground">{t.form.success}</p>
+              </div>
+            ) : (
+              <form action={formAction} className="flex flex-col gap-6">
+                {/* Name row */}
+                <div>
+                  <p className="text-sm font-medium text-foreground">{t.form.name}</p>
+                  <div className="mt-2 grid grid-cols-2 gap-4">
+                    <div>
+                      <label className="text-xs text-muted-foreground">
+                        {t.form.firstName}{" "}
+                        <span className="text-muted-foreground/60">({t.form.required})</span>
+                      </label>
+                      <input
+                        type="text"
+                        name="firstName"
+                        required
+                        className="mt-1 w-full rounded-lg border-0 bg-white px-4 py-3 text-sm text-foreground outline-none ring-1 ring-transparent focus:ring-primary/30 transition-shadow"
+                      />
+                    </div>
+                    <div>
+                      <label className="text-xs text-muted-foreground">
+                        {t.form.lastName}{" "}
+                        <span className="text-muted-foreground/60">({t.form.required})</span>
+                      </label>
+                      <input
+                        type="text"
+                        name="lastName"
+                        required
+                        className="mt-1 w-full rounded-lg border-0 bg-white px-4 py-3 text-sm text-foreground outline-none ring-1 ring-transparent focus:ring-primary/30 transition-shadow"
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              {/* Email */}
-              <div>
-                <label className="text-sm font-medium text-foreground">
-                  {t.form.emailLabel}{" "}
-                  <span className="text-xs font-normal text-muted-foreground/60">({t.form.required})</span>
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  required
-                  className="mt-2 w-full rounded-lg border-0 bg-white px-4 py-3 text-sm text-foreground outline-none ring-1 ring-transparent focus:ring-primary/30 transition-shadow"
-                />
-              </div>
+                {/* Email */}
+                <div>
+                  <label className="text-sm font-medium text-foreground">
+                    {t.form.emailLabel}{" "}
+                    <span className="text-xs font-normal text-muted-foreground/60">({t.form.required})</span>
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    className="mt-2 w-full rounded-lg border-0 bg-white px-4 py-3 text-sm text-foreground outline-none ring-1 ring-transparent focus:ring-primary/30 transition-shadow"
+                  />
+                </div>
 
-              {/* Message */}
-              <div>
-                <label className="text-sm font-medium text-foreground">
-                  {t.form.message}{" "}
-                  <span className="text-xs font-normal text-muted-foreground/60">({t.form.required})</span>
-                </label>
-                <textarea
-                  name="message"
-                  required
-                  rows={5}
-                  className="mt-2 w-full rounded-lg border-0 bg-white px-4 py-3 text-sm text-foreground outline-none ring-1 ring-transparent focus:ring-primary/30 transition-shadow resize-y"
-                />
-              </div>
+                {/* Message */}
+                <div>
+                  <label className="text-sm font-medium text-foreground">
+                    {t.form.message}{" "}
+                    <span className="text-xs font-normal text-muted-foreground/60">({t.form.required})</span>
+                  </label>
+                  <textarea
+                    name="message"
+                    required
+                    rows={5}
+                    className="mt-2 w-full rounded-lg border-0 bg-white px-4 py-3 text-sm text-foreground outline-none ring-1 ring-transparent focus:ring-primary/30 transition-shadow resize-y"
+                  />
+                </div>
 
-              {/* Submit */}
-              <div>
-                <button
-                  type="submit"
-                  className="rounded-full bg-primary px-8 py-3 text-sm font-medium text-primary-foreground transition-all hover:brightness-110"
-                >
-                  {t.form.submit}
-                </button>
-              </div>
-            </form>
+                {/* Error message */}
+                {state?.error && (
+                  <p className="text-sm text-destructive">{t.form.error}</p>
+                )}
+
+                {/* Submit */}
+                <div>
+                  <button
+                    type="submit"
+                    disabled={isPending}
+                    className="rounded-full bg-primary px-8 py-3 text-sm font-medium text-primary-foreground transition-all hover:brightness-110 disabled:opacity-60"
+                  >
+                    {isPending ? t.form.sending : t.form.submit}
+                  </button>
+                </div>
+              </form>
+            )}
           </div>
         </div>
       </div>

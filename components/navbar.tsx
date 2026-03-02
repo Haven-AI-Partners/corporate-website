@@ -46,7 +46,7 @@ export function Navbar({ locale, onLocaleChange, activePage = "home" }: NavbarPr
             <img
               src="/images/haven-logo.svg"
               alt="Haven AI Partners"
-              className="h-10"
+              className="h-14"
             />
           </Link>
 

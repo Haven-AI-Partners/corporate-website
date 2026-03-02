@@ -12,7 +12,7 @@ export function Footer({ locale }: { locale: Locale }) {
   return (
     <footer className="border-t border-[hsl(224,40%,24%)] bg-[hsl(224,54%,13%)] py-12">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="flex flex-col items-center gap-8 md:flex-row md:justify-between">
+        <div className="flex flex-col items-start gap-8 md:flex-row md:justify-between">
           <div>
             <Image
               src="/haven-logo.png"

@@ -11,24 +11,7 @@ export function Footer({ locale }: { locale: Locale }) {
 
   return (
     <footer className="border-t border-border bg-white">
-      {/* Newsletter signup */}
-      <div className="mx-auto max-w-[1440px] px-6 lg:px-8 py-16">
-        <div className="flex flex-col items-center gap-6 sm:flex-row sm:justify-center">
-          <input
-            type="email"
-            placeholder={t.newsletter.placeholder}
-            className="w-full sm:w-80 rounded-full border border-border px-6 py-3 text-sm text-foreground placeholder:text-muted-foreground outline-none focus:border-primary transition-colors"
-          />
-          <button
-            type="button"
-            className="rounded-full bg-primary px-8 py-3 text-sm font-medium text-primary-foreground transition-all hover:brightness-110"
-          >
-            {t.newsletter.cta}
-          </button>
-        </div>
-      </div>
-
-      <div className="border-t border-border">
+      <div>
         <div className="mx-auto max-w-[1440px] px-6 lg:px-8 py-8">
           <div className="flex flex-col items-start gap-8 md:flex-row md:justify-between md:items-center">
             <div>

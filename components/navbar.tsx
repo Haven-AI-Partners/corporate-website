@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Menu, X, Globe } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 import type { Locale } from "@/lib/content"
 import { content } from "@/lib/content"
@@ -40,11 +41,15 @@ export function Navbar({ locale, onLocaleChange, activePage = "home" }: NavbarPr
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <Link
-            href="/"
-            className="text-lg font-semibold tracking-tight text-foreground transition-colors"
-          >
-            Haven AI Partners
+          <Link href="/">
+            <Image
+              src="/images/haven-wordmark-sapphire.png"
+              alt="Haven AI Partners"
+              width={160}
+              height={40}
+              style={{ width: 160, height: "auto" }}
+              priority
+            />
           </Link>
 
           {/* Desktop nav */}

@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import { Linkedin } from "lucide-react"
 import type { Locale } from "@/lib/content"
 import { content } from "@/lib/content"
 
@@ -41,9 +42,20 @@ export function LeadershipSection({ locale }: { locale: Locale }) {
 
               {/* Text content */}
               <div className="p-8">
-                <h3 className="text-2xl font-light text-foreground">
-                  {member.name}
-                </h3>
+                <div className="flex items-center justify-between">
+                  <h3 className="text-2xl font-light text-foreground">
+                    {member.name}
+                  </h3>
+                  <a
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary hover:text-primary/80 transition-colors"
+                    aria-label={`${member.name} LinkedIn`}
+                  >
+                    <Linkedin className="h-5 w-5" />
+                  </a>
+                </div>
                 <p className="mt-2 text-sm font-medium text-primary">
                   {member.role}
                 </p>

@@ -4,7 +4,26 @@ import { TrendingUp, Lightbulb, Users } from "lucide-react"
 import type { Locale } from "@/lib/content"
 import { content } from "@/lib/content"
 
-const icons = [TrendingUp, Lightbulb, Users]
+const pillarsConfig = [
+  {
+    Icon: TrendingUp,
+    gradient: "from-primary/15 to-primary/5",
+    iconBg: "bg-primary text-primary-foreground",
+    accent: "bg-primary",
+  },
+  {
+    Icon: Lightbulb,
+    gradient: "from-accent/15 to-accent/5",
+    iconBg: "bg-accent text-accent-foreground",
+    accent: "bg-accent",
+  },
+  {
+    Icon: Users,
+    gradient: "from-[hsl(224,54%,16%)]/12 to-[hsl(224,54%,16%)]/4",
+    iconBg: "bg-[hsl(224,54%,16%)] text-white",
+    accent: "bg-[hsl(224,54%,16%)]",
+  },
+]
 
 export function VisionSection({ locale }: { locale: Locale }) {
   const t = content[locale].vision
@@ -26,19 +45,31 @@ export function VisionSection({ locale }: { locale: Locale }) {
 
         <div className="mt-16 grid gap-10 sm:grid-cols-3 lg:gap-12">
           {t.pillars.map((pillar, i) => {
-            const Icon = icons[i]
+            const { Icon, gradient, iconBg, accent } = pillarsConfig[i]
             return (
               <div
                 key={pillar.title}
-                className="rounded-2xl bg-secondary/40 p-14 min-h-[500px] flex flex-col justify-center transition-colors hover:bg-secondary/60"
+                className="group relative overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:shadow-lg"
               >
-                <Icon className="h-12 w-12 text-primary mb-8" />
-                <h3 className="text-2xl font-medium text-foreground">
-                  {pillar.title}
-                </h3>
-                <p className="mt-4 text-pretty text-base leading-relaxed text-muted-foreground lg:text-lg">
-                  {pillar.description}
-                </p>
+                {/* Gradient header area with centered icon */}
+                <div className={`h-44 bg-gradient-to-br ${gradient} relative flex items-center justify-center`}>
+                  <div className={`flex h-20 w-20 items-center justify-center rounded-2xl ${iconBg} shadow-lg transition-transform group-hover:scale-110`}>
+                    <Icon className="h-10 w-10" />
+                  </div>
+                </div>
+
+                {/* Accent bar */}
+                <div className={`h-1 ${accent} opacity-50`} />
+
+                {/* Content */}
+                <div className="p-8">
+                  <h3 className="text-2xl font-medium text-foreground">
+                    {pillar.title}
+                  </h3>
+                  <p className="mt-4 text-pretty text-base leading-relaxed text-muted-foreground lg:text-lg">
+                    {pillar.description}
+                  </p>
+                </div>
               </div>
             )
           })}

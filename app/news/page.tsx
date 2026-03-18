@@ -40,7 +40,7 @@ export default function NewsPage() {
           <p className="text-sm font-normal uppercase tracking-[0.25em] text-primary">
             {content[locale].nav.news}
           </p>
-          <h1 className="mt-4 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+          <h1 className="mt-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             {locale === "ja" ? "お知らせ・プレスリリース" : "News & Press Releases"}
           </h1>
 
@@ -51,7 +51,7 @@ export default function NewsPage() {
                 className="group border-b border-border pb-8 last:border-0"
               >
                 <p className="text-sm text-muted-foreground">{item.date}</p>
-                <h2 className="mt-2 text-2xl font-semibold text-foreground">
+                <h2 className="mt-2 text-2xl font-bold text-foreground">
                   {item.title}
                 </h2>
                 <p className="mt-3 text-base leading-relaxed text-muted-foreground">

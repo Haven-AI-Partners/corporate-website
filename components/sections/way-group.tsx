@@ -34,7 +34,7 @@ export function WayGroupSection({ locale }: { locale: Locale }) {
                   {track.label}
                 </span>
                 <ArrowRight className="h-4 w-4 text-muted-foreground" />
-                <span className="text-lg font-semibold text-foreground">
+                <span className="text-lg font-medium text-foreground">
                   {track.title}
                 </span>
               </div>
@@ -61,7 +61,7 @@ export function WayGroupSection({ locale }: { locale: Locale }) {
                     <Check className="h-3 w-3 text-primary" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-semibold text-foreground">
+                    <h4 className="text-sm font-medium text-foreground">
                       {synergy.title}
                     </h4>
                     <p className="mt-2 text-sm leading-relaxed text-muted-foreground">

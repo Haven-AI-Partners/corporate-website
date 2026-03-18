@@ -1,21 +1,14 @@
 import React from "react"
 import type { Metadata } from 'next'
 import { Analytics } from "@vercel/analytics/next"
-import { Plus_Jakarta_Sans, M_PLUS_1p } from 'next/font/google'
+import { Noto_Serif_JP } from 'next/font/google'
 
 import './globals.css'
 
-const plusJakartaSans = Plus_Jakarta_Sans({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-plus-jakarta-sans',
-  display: 'swap',
-})
-
-const mPlus1p = M_PLUS_1p({
+const notoSerifJP = Noto_Serif_JP({
   subsets: ['latin', 'japanese'],
-  weight: ['300'],
-  variable: '--font-mplus1p',
+  weight: ['400', '500', '700'],
+  variable: '--font-noto-serif-jp',
   display: 'swap',
 })
 
@@ -31,8 +24,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="ja" className={`${plusJakartaSans.variable} ${mPlus1p.variable}`}>
-      <body className="font-sans antialiased">
+    <html lang="ja" className={notoSerifJP.variable}>
+      <body className="font-serif antialiased">
         {children}
         <Analytics />
       </body>

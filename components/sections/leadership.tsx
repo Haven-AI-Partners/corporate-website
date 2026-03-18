@@ -15,7 +15,7 @@ export function LeadershipSection({ locale }: { locale: Locale }) {
           <p className="text-sm font-normal uppercase tracking-[0.25em] text-primary">
             {t.label}
           </p>
-          <h2 className="mt-4 text-balance text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+          <h2 className="mt-4 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             {t.title}
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg text-muted-foreground">
@@ -43,7 +43,7 @@ export function LeadershipSection({ locale }: { locale: Locale }) {
               {/* Text content */}
               <div className="p-8">
                 <div className="flex items-center justify-between">
-                  <h3 className="text-2xl font-light text-foreground">
+                  <h3 className="text-2xl font-normal text-foreground">
                     {member.name}
                   </h3>
                   <a

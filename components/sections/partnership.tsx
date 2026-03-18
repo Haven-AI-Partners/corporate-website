@@ -13,7 +13,7 @@ export function PartnershipSection({ locale }: { locale: Locale }) {
           <p className="text-sm font-normal uppercase tracking-[0.25em] text-primary">
             {t.label}
           </p>
-          <h2 className="mt-4 text-balance text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+          <h2 className="mt-4 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             {t.title}
           </h2>
         </div>
@@ -22,9 +22,9 @@ export function PartnershipSection({ locale }: { locale: Locale }) {
           <div className="rounded-2xl bg-secondary/30 p-10 lg:p-16">
             <div className="flex justify-center mb-8">
               <div className="flex items-center gap-6">
-                <span className="text-2xl font-semibold text-primary">Haven</span>
+                <span className="text-2xl font-bold text-primary">Haven</span>
                 <span className="text-muted-foreground">&</span>
-                <span className="text-2xl font-semibold text-primary">Recursive</span>
+                <span className="text-2xl font-bold text-primary">Recursive</span>
               </div>
             </div>
             <p className="text-pretty text-center text-lg leading-relaxed text-muted-foreground">

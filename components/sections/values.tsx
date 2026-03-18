@@ -16,7 +16,7 @@ export function ValuesSection({ locale }: { locale: Locale }) {
           <p className="text-sm font-normal uppercase tracking-[0.25em] text-primary">
             {t.label}
           </p>
-          <h2 className="mt-4 text-balance text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+          <h2 className="mt-4 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             {t.title}
           </h2>
         </div>
@@ -33,7 +33,7 @@ export function ValuesSection({ locale }: { locale: Locale }) {
                   <Icon className="h-8 w-8" />
                 </div>
                 <div className="mt-6 flex flex-col gap-2">
-                  <h3 className="text-base font-semibold leading-snug text-foreground lg:text-lg">
+                  <h3 className="text-base font-medium leading-snug text-foreground lg:text-lg">
                     {item.en}
                   </h3>
                   <p className="text-sm leading-relaxed text-muted-foreground">

@@ -22,7 +22,7 @@ export function ApproachSection({ locale }: { locale: Locale }) {
           <p className="text-sm font-normal uppercase tracking-[0.25em] text-[hsl(224,40%,70%)]">
             {t.label}
           </p>
-          <h2 className="mt-4 text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+          <h2 className="mt-4 text-balance text-3xl font-bold tracking-tight text-white sm:text-4xl">
             {t.title}
           </h2>
           <p className="mt-6 text-pretty text-lg text-[hsl(216,33%,75%)]">

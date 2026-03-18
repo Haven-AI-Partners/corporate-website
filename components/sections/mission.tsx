@@ -12,7 +12,7 @@ export function MissionSection({ locale }: { locale: Locale }) {
         <p className="text-sm font-normal uppercase tracking-[0.25em] text-primary">
           {t.label}
         </p>
-        <h2 className="mt-4 text-balance text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+        <h2 className="mt-4 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
           {t.subtitle}
         </h2>
         <div className="mx-auto mt-8 h-[2px] w-20 bg-primary" />

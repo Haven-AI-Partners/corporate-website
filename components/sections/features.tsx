@@ -35,7 +35,7 @@ export function FeaturesSection({ locale }: { locale: Locale }) {
                 <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary/20">
                   <Icon className="h-6 w-6" />
                 </div>
-                <h3 className="text-lg font-semibold text-foreground">
+                <h3 className="text-lg font-medium text-foreground">
                   {item.title}
                 </h3>
                 <p className="mt-4 text-pretty text-sm leading-relaxed text-muted-foreground">

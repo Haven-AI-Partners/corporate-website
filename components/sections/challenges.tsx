@@ -36,7 +36,7 @@ export function ChallengesSection({ locale }: { locale: Locale }) {
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary/20">
                   <Icon className="h-6 w-6" />
                 </div>
-                <h3 className="text-base font-semibold text-foreground">
+                <h3 className="text-base font-medium text-foreground">
                   {item.title}
                 </h3>
                 <p className="mt-1 text-xs text-primary/70">
@@ -69,7 +69,7 @@ export function ChallengesSection({ locale }: { locale: Locale }) {
                     <div className="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-muted">
                       <Icon className="h-5 w-5 text-muted-foreground" />
                     </div>
-                    <h4 className="text-sm font-semibold text-foreground">
+                    <h4 className="text-sm font-medium text-foreground">
                       {barrier.title}
                     </h4>
                     <p className="mt-1 text-xs text-muted-foreground">

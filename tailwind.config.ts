@@ -63,7 +63,13 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-plus-jakarta-sans)', 'var(--font-mplus1p)', 'system-ui', 'sans-serif'],
+        serif: ['var(--font-noto-serif-jp)', 'Georgia', 'serif'],
+      },
+      lineHeight: {
+        'jp': '1.7',
+      },
+      letterSpacing: {
+        'jp': '0.05em',
       },
       borderRadius: {
         lg: 'var(--radius)',

@@ -52,8 +52,22 @@
   }
   body {
     @apply bg-background text-foreground;
+    line-height: 1.7;
+    letter-spacing: 0.05em;
+    font-weight: 400;
   }
   html {
     scroll-behavior: smooth;
+  }
+  /* Disable italics for Japanese text — use bold or color for emphasis */
+  em, i {
+    font-style: normal;
+    font-weight: 700;
+  }
+  h1, h2, h3 {
+    font-weight: 700;
+  }
+  h4, h5, h6 {
+    font-weight: 500;
   }
 }

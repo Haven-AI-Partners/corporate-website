@@ -15,7 +15,7 @@ export function ContactSection({ locale }: { locale: Locale }) {
         <div className="grid gap-16 lg:grid-cols-2 lg:gap-24">
           {/* Left column - text */}
           <div className="flex flex-col justify-center">
-            <h2 className="text-3xl font-light tracking-tight text-white sm:text-4xl">
+            <h2 className="text-3xl font-normal tracking-tight text-white sm:text-4xl">
               {t.title}
             </h2>
             <p className="mt-6 text-pretty text-lg leading-relaxed text-white/70">

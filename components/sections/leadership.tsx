@@ -9,7 +9,7 @@ export function LeadershipSection({ locale }: { locale: Locale }) {
   const t = content[locale].leadership
 
   return (
-    <section id="leadership" className="pt-16 pb-32 lg:pt-20 lg:pb-40 bg-secondary/30">
+    <section id="leadership" className="pt-16 pb-16 lg:pt-20 lg:pb-20 bg-secondary/30">
       <div className="mx-auto max-w-[1440px] px-6 lg:px-8">
         <div className="text-center">
           <p className="text-sm font-normal uppercase tracking-[0.25em] text-primary">

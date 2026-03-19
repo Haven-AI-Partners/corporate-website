@@ -26,6 +26,10 @@ export const content = {
           label: "事業内容",
           value: "AIソリューション / ITサービスの導入支援",
         },
+        {
+          label: "所在地",
+          value: "東京都渋谷区猿楽町17-10 代官山アートヴィレッジ2C",
+        },
       ],
       description:
         "Haven AI Partnersは、MSP、リセラー企業、SIerを戦略的にグループへ迎え入れ、AI時代の成長を牽引するテクノロジー企業グループを構築します。",
@@ -390,6 +394,10 @@ export const content = {
         {
           label: "Business",
           value: "AI Solutions / IT Service Implementation Support",
+        },
+        {
+          label: "Address",
+          value: "Daikanyama Art Village 2C, 17-10 Sarugakuchō, Shibuya, Tokyo, Japan 150-0033",
         },
       ],
       description:

@@ -39,15 +39,15 @@ export function Navbar({ locale, onLocaleChange, activePage = "home" }: NavbarPr
           : "bg-transparent"
       }`}
     >
-      <div className="mx-auto max-w-[1440px] px-6 lg:px-8">
+      <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
         <div className="flex h-24 items-center justify-between">
-          <Link href="/">
+          <Link href="/" className="shrink-0">
             <Image
               src="/images/haven-wordmark-sapphire.png"
               alt="Haven AI Partners"
               width={280}
               height={70}
-              style={{ width: 280, height: "auto" }}
+              className="h-auto w-[180px] sm:w-[220px] lg:w-[280px]"
               priority
             />
           </Link>

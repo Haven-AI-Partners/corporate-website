@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(pnpm add:*)",
+      "Bash(pnpm build:*)",
+      "Bash(pnpm install:*)",
+      "Bash(git checkout:*)",
+      "Bash(git add*)",
+      "Bash(git commit:*)",
+      "Bash(gh pr:*)",
+      "Bash(git add:*)",
+      "Bash(git rebase:*)",
+      "Bash(git push:*)",
+      "Bash(vercel:*)",
+      "Bash(sips:*)",
+      "Bash(npx svgo:*)",
+      "WebFetch",
+      "mcp__ide__getDiagnostics",
+      "Read"
+    ]
+  }
+}

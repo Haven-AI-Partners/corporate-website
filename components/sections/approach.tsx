@@ -36,7 +36,7 @@ export function ApproachSection({ locale }: { locale: Locale }) {
             return (
               <div
                 key={pillar.title}
-                className="group rounded-2xl border border-white/10 bg-white/[0.04] backdrop-blur-sm p-8 transition-all hover:bg-white/[0.08] hover:border-white/20"
+                className="group rounded-2xl border border-white/10 bg-white/[0.04] backdrop-blur-sm px-5 py-8 transition-all hover:bg-white/[0.08] hover:border-white/20 lg:px-6"
               >
                 {/* Number + Icon */}
                 <div className="flex items-center justify-between mb-6">
@@ -48,14 +48,14 @@ export function ApproachSection({ locale }: { locale: Locale }) {
                   </div>
                 </div>
 
-                <h3 className="text-xl font-medium text-white">
+                <h3 className="text-balance text-xl font-medium text-white">
                   {pillar.title}
                 </h3>
-                <p className="mt-1.5 text-sm font-medium text-[hsl(224,40%,70%)]">
+                <p className="text-balance mt-1.5 text-sm font-medium text-[hsl(224,40%,70%)]">
                   {pillar.subtitle}
                 </p>
                 {pillar.description && (
-                  <p className="mt-4 text-base leading-relaxed text-[hsl(216,33%,75%)]">
+                  <p className="text-balance mt-4 text-base leading-relaxed text-[hsl(216,33%,75%)]">
                     {pillar.description}
                   </p>
                 )}

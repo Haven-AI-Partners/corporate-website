@@ -37,7 +37,7 @@ export function ValuesSection({ locale }: { locale: Locale }) {
                     {locale === "ja" ? item.ja : item.en}
                   </h3>
                   <p className="text-balance text-sm leading-relaxed text-muted-foreground">
-                    {locale === "ja" ? item.en : item.ja}
+                    {locale === "ja" ? item.en : item.enSub}
                   </p>
                 </div>
               </div>

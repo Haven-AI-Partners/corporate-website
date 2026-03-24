@@ -145,11 +145,11 @@ export const content = {
       label: "バリュー",
       title: "Havenの 5 Values",
       items: [
-        { en: "Champion Customers & Partners", ja: "顧客とパートナーの成功を、最優先に" },
-        { en: "Build Trust in Every Moment", ja: "すべての瞬間に、誠実さを。" },
-        { en: "Lead with Humility & Stewardship", ja: "謙虚に学び、責任を果たす。" },
-        { en: "Advance with Speed & Purpose", ja: "意志あるスピードで前進する。" },
-        { en: "Win Together, Own the Outcome", ja: "チーム力で勝ち、結果に責任を持つ。" },
+        { en: "Champion Customers & Partners", ja: "顧客とパートナーの成功を、最優先に", enSub: "Putting customer and partner success first" },
+        { en: "Build Trust in Every Moment", ja: "すべての瞬間に、誠実さを。", enSub: "Integrity in every interaction" },
+        { en: "Lead with Humility & Stewardship", ja: "謙虚に学び、責任を果たす。", enSub: "Learn humbly, take responsibility" },
+        { en: "Advance with Speed & Purpose", ja: "意志あるスピードで前進する。", enSub: "Move forward with intentional speed" },
+        { en: "Win Together, Own the Outcome", ja: "チーム力で勝ち、結果に責任を持つ。", enSub: "Win as a team, own the results" },
       ],
     },
     challenges: {
@@ -520,11 +520,11 @@ export const content = {
       label: "Values",
       title: "Haven's 5 Values",
       items: [
-        { en: "Champion Customers & Partners", ja: "顧客とパートナーの成功を、最優先に" },
-        { en: "Build Trust in Every Moment", ja: "すべての瞬間に、誠実さを。" },
-        { en: "Lead with Humility & Stewardship", ja: "謙虚に学び、責任を果たす。" },
-        { en: "Advance with Speed & Purpose", ja: "意志あるスピードで前進する。" },
-        { en: "Win Together, Own the Outcome", ja: "チーム力で勝ち、結果に責任を持つ。" },
+        { en: "Champion Customers & Partners", ja: "顧客とパートナーの成功を、最優先に", enSub: "Putting customer and partner success first" },
+        { en: "Build Trust in Every Moment", ja: "すべての瞬間に、誠実さを。", enSub: "Integrity in every interaction" },
+        { en: "Lead with Humility & Stewardship", ja: "謙虚に学び、責任を果たす。", enSub: "Learn humbly, take responsibility" },
+        { en: "Advance with Speed & Purpose", ja: "意志あるスピードで前進する。", enSub: "Move forward with intentional speed" },
+        { en: "Win Together, Own the Outcome", ja: "チーム力で勝ち、結果に責任を持つ。", enSub: "Win as a team, own the results" },
       ],
     },
     challenges: {

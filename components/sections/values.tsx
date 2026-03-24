@@ -36,11 +36,9 @@ export function ValuesSection({ locale }: { locale: Locale }) {
                   <h3 className="text-balance text-base font-medium leading-snug text-foreground lg:text-lg">
                     {locale === "ja" ? item.ja : item.en}
                   </h3>
-                  {locale === "ja" && (
-                    <p className="text-balance text-sm leading-relaxed text-muted-foreground">
-                      {item.en}
-                    </p>
-                  )}
+                  <p className="text-balance text-sm leading-relaxed text-muted-foreground">
+                    {locale === "ja" ? item.en : item.ja}
+                  </p>
                 </div>
               </div>
             )

@@ -34,10 +34,10 @@ export function ValuesSection({ locale }: { locale: Locale }) {
                 </div>
                 <div className="mt-6 flex flex-col gap-2">
                   <h3 className="text-balance text-base font-medium leading-snug text-foreground lg:text-lg">
-                    {locale === "ja" ? item.ja : item.en}
+                    {item.en}
                   </h3>
                   <p className="text-balance text-sm leading-relaxed text-muted-foreground">
-                    {locale === "ja" ? item.en : item.enSub}
+                    {locale === "ja" ? item.ja : item.enSub}
                   </p>
                 </div>
               </div>

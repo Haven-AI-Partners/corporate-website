@@ -2,6 +2,7 @@
 
 import { z } from "zod"
 import { Resend } from "resend"
+import { sendSlackMessage } from "@/lib/slack"
 
 const schema = z.object({
   firstName: z.string().min(1),
@@ -38,6 +39,33 @@ export async function submitContactForm(
       subject: `Contact form: ${name}`,
       text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
     })
+
+    // Fire-and-forget Slack notification
+    sendSlackMessage(
+      [
+        {
+          type: "header",
+          text: {
+            type: "plain_text",
+            text: ":envelope: New Contact Form Inquiry",
+            emoji: true,
+          },
+        },
+        {
+          type: "section",
+          fields: [
+            { type: "mrkdwn", text: `*Name:*\n${name}` },
+            { type: "mrkdwn", text: `*Email:*\n${email}` },
+          ],
+        },
+        { type: "divider" },
+        {
+          type: "section",
+          text: { type: "mrkdwn", text: `*Message:*\n${message}` },
+        },
+      ],
+      `New inquiry from ${name} (${email})`,
+    )
 
     return { success: true }
   } catch {

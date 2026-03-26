@@ -7,7 +7,7 @@ import { Noto_Serif_JP } from 'next/font/google'
 import './globals.css'
 
 const notoSerifJP = Noto_Serif_JP({
-  subsets: ['latin', 'japanese'],
+  subsets: ['latin', 'latin-ext'],
   weight: ['400', '500', '700'],
   variable: '--font-noto-serif-jp',
   display: 'swap',

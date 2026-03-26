@@ -2,6 +2,7 @@ import React from "react"
 import type { Metadata } from 'next'
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { ClerkProvider } from '@clerk/nextjs'
 import { Noto_Serif_JP } from 'next/font/google'
 
 import './globals.css'
@@ -25,12 +26,14 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="ja" className={notoSerifJP.variable}>
-      <body className="font-serif antialiased">
-        {children}
-        <Analytics />
-        <SpeedInsights />
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="ja" className={notoSerifJP.variable}>
+        <body className="font-serif antialiased">
+          {children}
+          <Analytics />
+          <SpeedInsights />
+        </body>
+      </html>
+    </ClerkProvider>
   )
 }

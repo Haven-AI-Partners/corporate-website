@@ -18,7 +18,9 @@
       "WebFetch",
       "mcp__ide__getDiagnostics",
       "Read",
-      "Bash(find *)"
+      "Bash(find *)",
+      "Bash(ls:*)",
+      "Bash(pnpm typecheck:*)"
     ]
   }
 }
